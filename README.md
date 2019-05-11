@@ -1,4 +1,6 @@
 # Getting started with Nginx setting
+
+## setting file of nginx
 ```
 user nginx;
 worker_processes auto;
@@ -61,4 +63,9 @@ http {
         }
     }
 }
+```
+
+## firewall customize for redbrick
+```
+sudo setsebool -P httpd_can_network_connect 1
 ```
