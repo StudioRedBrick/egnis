@@ -95,8 +95,8 @@ function scrollNav(){
     //set position of side nav according to window size
     var getHeight = $(window).height();
     var getWidth = $(window).width();
-    var valHeight = getHeight*(4/5);
-    var valWidth = getWidth*(1/5);
+    var valHeight = getHeight*(5/6);
+    var valWidth = getWidth*(1/6);
     $(".box0").css({"top":valHeight+"px","right":valWidth+"px"});
     
     //when scrolltop clicked
