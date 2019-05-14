@@ -112,16 +112,20 @@ function scrollNav(){
 
 function menuScroll(){
     $(".box1 .ham_wrap .menu li:nth-child(1)").on('click', function(){
-        $('html,body').animate({scrollTop: $(".box3").position().top},'slow');    
+        $(".box1 .ham_wrap").animate({"margin-left":"-100vw"});
+        $('html,body').animate({scrollTop: $(".box3").position().top-75},'slow');    
     });
     $(".box1 .ham_wrap .menu li:nth-child(2)").on('click', function(){
-        $('html,body').animate({scrollTop: $(".box4").position().top},'slow');    
+        $(".box1 .ham_wrap").animate({"margin-left":"-100vw"});
+        $('html,body').animate({scrollTop: $(".box4").position().top-75},'slow');    
     });
     $(".box1 .ham_wrap .menu li:nth-child(3)").on('click', function(){
-        $('html,body').animate({scrollTop: $(".box5").position().top},'slow');    
+        $(".box1 .ham_wrap").animate({"margin-left":"-100vw"});
+        $('html,body').animate({scrollTop: $(".box5").position().top-75},'slow');    
     });
     $(".box1 .ham_wrap .menu li:nth-child(4)").on('click', function(){
-        $('html,body').animate({scrollTop: $(".box6").position().top},'medium');    
+        $(".box1 .ham_wrap").animate({"margin-left":"-100vw"});
+        $('html,body').animate({scrollTop: $(".box6").position().top-75},'medium');    
     });
 }
 

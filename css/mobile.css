@@ -43,9 +43,10 @@ img{width: 100%;}
 .box0 .nav_wrap .btn2{margin-top:5px; cursor:pointer;}
 /*---------------------------------------------------------*/
 /*box1 START*/ /*subin*/
-.box1{width:100%; height:75px; position:relative;}
-.box1 .logo{width:100px; float:left; position:absolute; left:30px; top:22px; cursor:pointer;}
-.box1 .ham_icon{width:20px; position:absolute; right:30px; top:25px; cursor:pointer;}
+.box1{width:100%; height:75px; position:fixed; background:#fff; z-index:9998;}
+.box1 .m_header{position:relative;}
+.box1 .m_header .logo{width:100px; position:absolute; left:30px; top:22px; cursor:pointer;}
+.box1 .m_header .ham_icon{width:20px; position:absolute; right:30px; top:25px; cursor:pointer;}
 
 .box1 .ham_wrap{position:fixed; width:100vw; height:100vh; z-index:9998; overflow:hidden; background:blue; margin-left:-100vw;}
 .box1 .ham_wrap .header{height:60px; position:relative;}
@@ -57,7 +58,7 @@ img{width: 100%;}
 /*box1 END*/
 /*---------------------------------------------------------*/
 /*box2 START*/ /*subin*/
-.box2{background:#0600ff;}
+.box2{background:#0600ff; padding-top:75px;}
 .box2 .slider{width:100%;}
 .box2 .slider li{height:700px; background:blue;}
 /*box2 END*/
@@ -211,7 +212,7 @@ img{width: 100%;}
 /*box6 START*/ /*subin*/
 .box6{background:#0600ff; padding:50px 0 100px 0;}
 .box6 .aco{padding:20px 0; border-bottom:1px solid #fff; overflow:hidden;}
-.box6 .aco p{font-size:16px; color:#fff; line-height:1.78;}
+.box6 .aco p{font-size:15px; color:#fff; line-height:1.78;}
 .box6 .aco .highlight{position:relative; cursor:pointer;}
 .box6 .aco .txt{transform:scaleY(0%); height:0px; opacity:0;}
 .box6 .aco p span{width:15px; height:15px; display:block; background-image:url(../img/icon_plus.png); background-repeat:no-repeat; background-size:cover; position:absolute; top:6px; right:0;}
