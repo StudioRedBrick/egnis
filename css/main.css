@@ -17,6 +17,7 @@ ul, li{list-style:none;}
 p, span, h1, h2, h3{margin:0; padding:0;}
 /*reset end*/
 
+.full_width{width:1280px; margin:0 auto;}
 /*---------------------------------------------------------*/
 /*box1 START*/ /*subin*/
 .box1{width:100%; height:155px; position:relative;}
@@ -26,7 +27,6 @@ p, span, h1, h2, h3{margin:0; padding:0;}
 .box1 .menu li:hover{opacity:1;}
 .box1 .menu li:nth-child(4){margin-left:0;}
 .box1 .menu:after{content:""; display:block; clear:both;}/*clearfix*/
-
 /*box1 END*/
 /*---------------------------------------------------------*/
 /*box2 START*/ /*subin*/
@@ -42,7 +42,8 @@ p, span, h1, h2, h3{margin:0; padding:0;}
 /*box4 END*/
 /*---------------------------------------------------------*/
 /*box5 START*/ /*subin*/
-.box5{background:#0600ff;}
+.box5{background:#0600ff; width:1280px; margin:0 auto;}
+
 /*box5 END*/
 /*---------------------------------------------------------*/
 /*box6 START*/ /*subin*/
