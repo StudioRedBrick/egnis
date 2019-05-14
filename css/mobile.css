@@ -38,7 +38,7 @@ img{width: 100%;}
 .clearfix::after {content:""; clear:both; display:block;}
 /*---------------------------------------------------------*/
 /*box0 START*/ /*side nav*/
-.box0{position:absolute; top:0px; right:0px; z-index:9999;}
+.box0{position:absolute; top:0px; right:0px; z-index:9997;}
 .box0 .nav_wrap{width:55px; position:fixed;}
 .box0 .nav_wrap .btn2{margin-top:5px; cursor:pointer;}
 /*---------------------------------------------------------*/
@@ -48,11 +48,11 @@ img{width: 100%;}
 .box1 .m_header .logo{width:100px; position:absolute; left:30px; top:22px; cursor:pointer;}
 .box1 .m_header .ham_icon{width:20px; position:absolute; right:30px; top:25px; cursor:pointer;}
 
-.box1 .ham_wrap{position:fixed; width:100vw; height:100vh; z-index:9998; overflow:hidden; background:blue; margin-left:-100vw;}
-.box1 .ham_wrap .header{height:60px; position:relative;}
-.box1 .ham_wrap .header li:nth-child(1){width:80px; position:absolute; left:0px; top:16px; cursor:pointer;}
-.box1 .ham_wrap .header li:nth-child(2){width:20px; position:absolute; right:0px; top:20px; cursor:pointer;}
-.box1 .ham_wrap .menu{padding-top:60px;}
+.box1 .ham_wrap{position:fixed; width:100vw; height:100vh; z-index:9998; overflow:hidden; background:blue; margin-left:100vw;}
+.box1 .ham_wrap .header{height:75px; position:relative;}
+.box1 .ham_wrap .header li:nth-child(1){width:100px; position:absolute; left:0px; top:22px; cursor:pointer;}
+.box1 .ham_wrap .header li:nth-child(2){width:30px; position:absolute; right:0px; top:23px; cursor:pointer;}
+.box1 .ham_wrap .menu{padding-top:50px;}
 .box1 .ham_wrap .menu li{font-size:40px; line-height:40px; font-family:'metropolis-black'; color:#fff; padding:12px 0; cursor:pointer;}
 .box1 .ham_wrap .image{margin-top:-35px; height:355px; background:red;}
 /*box1 END*/

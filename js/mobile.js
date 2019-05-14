@@ -132,6 +132,6 @@ function sideNav(){
     
     //close side nav
     $(".box1 .ham_wrap .header li:nth-child(2)").on('click',function(){
-        $(".box1 .ham_wrap").animate({"margin-left":"-100vw"});
+        $(".box1 .ham_wrap").animate({"margin-left":"100vw"});
     });
 }
