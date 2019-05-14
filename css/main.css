@@ -15,9 +15,12 @@ body{margin:0; padding:0;}
 a{text-decoration:none; color:rgba(0,0,0,1);}
 ul, li{list-style:none;}
 p, span, h1, h2, h3{margin:0; padding:0;}
+img{width: 100%;}
 /*reset end*/
 
 .fix_width{width:1280px; margin:0 auto;}
+.clearfix::after {content:""; clear:both; display:table;}
+
 /*---------------------------------------------------------*/
 /*box1 START*/ /*subin*/
 .box1{width:100%; height:155px; position:relative;}
@@ -34,6 +37,54 @@ p, span, h1, h2, h3{margin:0; padding:0;}
 /*box2 END*/
 /*---------------------------------------------------------*/
 /*box3 START*/ /*yeeun*/
+.box3{
+    text-align: center;
+}
+
+.box3 .academy_header{
+    width: 360px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.box3 .academy_text{
+    font-size: 19px;
+    line-height: 1.88;
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.box3 .academy_session{
+    width: 100%;
+    position: relative;
+}
+
+.box3 .academy_session .acd_session{
+    width: 33.3333%;
+    float: left;
+}
+
+.box3 .academy_session .acd_session .acd_img{
+    background: #000000;
+}
+
+.box3 .academy_session .acd_session .acd_txt{
+    background: #0600ff;
+    text-align: left;
+    color: #ffffff; 
+}
+
+.box3 .academy_session .acd_session .acd_txt .acd_txt_subtitle{
+  font-size: 24px;
+}
+
+.box3 .academy_session .acd_session .acd_txt .acd_txt_title{
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
 
 /*box3 END*/
 /*---------------------------------------------------------*/
