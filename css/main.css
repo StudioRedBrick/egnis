@@ -28,6 +28,7 @@ img{width: 100%;}
 /*reset end*/
 
 .fix_width{width:1000px; margin:0 auto;}
+.highlight{font-weight:bold;}
 .clearfix::after {content:""; clear:both; display:table;}
 
 /*---------------------------------------------------------*/
@@ -125,17 +126,26 @@ img{width: 100%;}
 /*---------------------------------------------------------*/
 /*box5 START*/ /*subin*/
 .box5{background:#0600ff;}
-.box5 .title{width:30%; margin:0 auto; font-size:80px; line-height:90px; background:red; color:#fff; text-align:center; font-family:'markmywords'; border-bottom:26px solid #00ff00; padding-top:100px; margin-bottom:100px;}
+.box5 .title{width:20%; margin:0 auto; font-size:80px; line-height:90px; color:#fff; text-align:center; font-family:'markmywords'; border-bottom:26px solid #00ff00; padding-top:100px; margin-bottom:100px;}
 .box5 .poster{width:800px; margin:0 auto;}
 .box5 .sub_title{width:800px; margin:0 auto;}
 .box5 .sub_title p{font-family:'metropolis'; letter-spacing:7px; font-size:30px; color:#fff; padding:70px 0 18px 0;}
-.box5 .sub_title h3{font-size:52px; line-height:52px; color:#fff; font-weight:bold;}
-.box5 .content{width:800px; margin:0 auto;}
+.box5 .sub_title h3{font-size:52px; line-height:52px; color:#fff; font-weight:bold; padding-bottom:55px; border-bottom:2px solid #00ff00;}
+.box5 .content{width:800px; margin:70px auto 0 auto;}
+.box5 .content p{color:#fff; font-size:19px; line-height:1.88;}
+.box5 .content .txt{opacity:0.8;}
+.box5 .content .txt2{margin-top:35px;}
 
 /*box5 END*/
 /*---------------------------------------------------------*/
 /*box6 START*/ /*subin*/
-.box6{background:#0600ff;}
+.box6{background:#0600ff; padding-top:90px;}
+.box6 .aco{width:800px; margin:0 auto; padding:30px 0; border-bottom:1px solid #fff; overflow:hidden;}
+.box6 .aco p{font-size:19px; color:#fff; line-height:1.88;}
+.box6 .aco .highlight{position:relative; cursor:pointer;}
+.box6 .aco .txt{transform:scaleY(0%); height:0px; opacity:0;}
+.box6 .aco p span{width:20px; height:20px; display:block; background-image:url(../img/icon_plus.png); background-repeat:no-repeat; background-size:cover; position:absolute; top:7px; right:0;}
+
 /*box6 END*/
 /*---------------------------------------------------------*/
 /*box7 START*/ /*yeeun*/
