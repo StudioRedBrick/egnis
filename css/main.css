@@ -104,7 +104,12 @@ img{width: 100%;}
 /*---------------------------------------------------------*/
 /*box5 START*/ /*subin*/
 .box5{background:#0600ff;}
-.box5 .title{width:58%; margin:0 auto; font-size:150.5px; line-height:150.5px; background:red; color:#fff; text-align:center; font-family:'markmywords'; border-bottom:46px solid #00ff00;}
+.box5 .title{width:30%; margin:0 auto; font-size:80px; line-height:90px; background:red; color:#fff; text-align:center; font-family:'markmywords'; border-bottom:26px solid #00ff00; padding-top:100px; margin-bottom:100px;}
+.box5 .poster{width:800px; margin:0 auto;}
+.box5 .sub_title{width:800px; margin:0 auto;}
+.box5 .sub_title p{font-family:'metropolis'; letter-spacing:7px; font-size:30px; color:#fff; padding:70px 0 18px 0;}
+.box5 .sub_title h3{font-size:52px; line-height:52px; color:#fff; font-weight:bold;}
+.box5 .content{width:800px; margin:0 auto;}
 
 /*box5 END*/
 /*---------------------------------------------------------*/
