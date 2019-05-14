@@ -18,7 +18,7 @@ p, span, h1, h2, h3{margin:0; padding:0;}
 /*reset end*/
 
 /*---------------------------------------------------------*/
-/*box1 START*/
+/*box1 START*/ /*subin*/
 .box1{width:100%; height:155px; position:relative;}
 .box1 .logo{width:210px; height:71px; float:left; position:absolute; left:100px; top:46px; background-image:url(../img/logo.png); background-repeat:no-repeat; background-size:cover; cursor:pointer;}
 .box1 .menu{padding-right:100px; padding-top:71px;}
@@ -29,27 +29,27 @@ p, span, h1, h2, h3{margin:0; padding:0;}
 
 /*box1 END*/
 /*---------------------------------------------------------*/
-/*box2 START*/
+/*box2 START*/ /*subin*/
 .box2{background:#0600ff;}
 /*box2 END*/
 /*---------------------------------------------------------*/
-/*box3 START*/
+/*box3 START*/ /*yeeun*/
 
 /*box3 END*/
 /*---------------------------------------------------------*/
-/*box4 START*/
+/*box4 START*/ /*yeeun*/
 .box4{background:#000000;}
 /*box4 END*/
 /*---------------------------------------------------------*/
-/*box5 START*/
+/*box5 START*/ /*subin*/
 .box5{background:#0600ff;}
 /*box5 END*/
 /*---------------------------------------------------------*/
-/*box6 START*/
-
+/*box6 START*/ /*subin*/
+.box6{background:#0600ff;}
 /*box6 END*/
 /*---------------------------------------------------------*/
-/*box7 START*/
+/*box7 START*/ /*yeeun*/
 .box7{background:#000000;}
 /*box7 END*/
 /*---------------------------------------------------------*/
