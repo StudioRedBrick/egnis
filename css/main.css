@@ -4,18 +4,18 @@ font-family: 'Noto Sans KR', sans-serif;
 
 @font-face {
 font-family: "markmywords";
-src: url("mark_my_words.otf") format('opentype'),
-src: url("mark_my_words.ttf") format("truetype");
+src: url("../font/mark_my_words/mark_my_words.otf") format("opentype"),
+    url("../font/mark_my_words/mark_my_words.ttf") format("truetype");
 }
 
 @font-face {
 font-family: "metropolis";
-src: url("Metropolis-Regular.otf") format('opentype'),
-src: url("Metropolis-Thin") format("opentype"),
-src: url("Metropolis-Light") format("opentype"),
-src: url("Metropolis-Medium") format("opentype"),
-src: url("Metropolis-ExtraLight") format("opentype"),
-src: url("Metropolis-Bold") format("opentype");
+src: url("../font/metropolis/Metropolis-Regular.otf") format("opentype"),
+    url("../font/metropolis/Metropolis-Thin.otf") format("opentype"),
+    url("../font/metropolis/Metropolis-Light.otf") format("opentype"),
+    url("../font/metropolis/Metropolis-Medium.otf") format("opentype"),
+    url("../font/metropolis/Metropolis-ExtraLight.otf") format("opentype"),
+    url("../font/metropolis/Metropolis-Bold.otf") format("opentype");
 }
 
 /*reset*/
@@ -87,12 +87,13 @@ img{width: 100%;}
 
 .box3 .academy_session .acd_session .acd_txt .acd_txt_subtitle{
   font-size: 24px;
+    font-family: 'metropolis';
 }
 
 .box3 .academy_session .acd_session .acd_txt .acd_txt_title{
   font-size: 30px;
   font-weight: 900;
-  line-height: 1.25;
+  line-height: 1.25; 
 }
 
 
@@ -104,7 +105,7 @@ img{width: 100%;}
 /*---------------------------------------------------------*/
 /*box5 START*/ /*subin*/
 .box5{background:#0600ff;}
-.box5 .title{width:58%; margin:0 auto; font-size:150.5px; line-height:150.5px; background:red; color:#fff; text-align:center; font-family:markmywords; border-bottom:46px solid #00ff00;}
+.box5 .title{width:58%; margin:0 auto; font-size:150.5px; line-height:150.5px; background:red; color:#fff; text-align:center; font-family:'markmywords'; border-bottom:46px solid #00ff00;}
 
 /*box5 END*/
 /*---------------------------------------------------------*/
