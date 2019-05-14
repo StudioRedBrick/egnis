@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X_UA-compatible" content="IE=Edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     
     <title>NABBA</title>
     <!--favicon-->
@@ -16,24 +17,13 @@
     <link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css">
     <link rel="stylesheet" type="text/css" href="./css/jquery-ui.structure.min.css">
     <link rel="stylesheet" type="text/css" href="./css/jquery-ui.theme.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css">
     <!--js-->
     <script type="text/javascript" src="./js/vendor/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/vendor/jquery-ui.min.js"></script>
     <script type="text/javascript" src="./js/vendor/jquery.flexslider.js"></script>
     <script type="text/javascript" src="./js/vendor/jquery.bxslider.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
-    
-    <!-- detect mobile device -->
-    <script type="text/javascript">
-        var mobileKeyWords = new Array('iPhone','SAMSUNG','BlackBerry','Android','Windows CE','Windows CE;','LG','MOT','SonyEricsson','Symbian','Opera Mobi','Opera Mini','IEmobile');
-        for(var word in mobileKeyWords){
-            if(navigator.userAgent.match(mobileKeyWords[word])!=null){
-                location.href="index_m.html";
-                break;
-            }
-        }
-    </script>
+    <script type="text/javascript" src="./js/mobile.js"></script>
 </head>
 
 <body>
@@ -47,21 +37,30 @@
     
     <div class="box1">
         <div class="logo"><a href="/index.html"><img src="./img/logo.png"></a></div>
-        <ul class="menu">
-            <li>FAQ &amp; Contact</li>
-            <li>아카데미 등록</li>
-            <li>강사진 소개</li>
-            <li>NTB에 대하여</li>
-        </ul>
+        <div class="ham_icon"><img src="/img/ham_icon.png"></div>
+        
+        <div class="ham_wrap">
+            <ul class="header fix_width">
+                <li><img src="/img/logo_w.png"></li>
+                <li><img src="/img/close_btn.png"></li>
+            </ul>
+            <ul class="menu fix_width">
+                <li>ABOUT NTB</li>
+                <li>INSTRUCTORS</li>
+                <li>ADMISSION</li>
+                <li>FAQ &amp;<br> CONTACT</li>
+            </ul>
+            <div class="image fix_width"><img src="#"></div>
+        </div>
     </div>
     <div class="box2">
     
         <ul class="slider">
-            <li><p><img src="/img/banner.png"></p></li>
-            <li><p><img src="/img/banner.png"></p></li>
-            <li><p><img src="/img/banner.png"></p></li>
-            <li><p><img src="/img/banner.png"></p></li>
-            <li><p><img src="/img/banner.png"></p></li>
+            <li>slide1</li>
+            <li>slide2</li>
+            <li>slide3</li>
+            <li>slide4</li>
+            <li>slide5</li>
         </ul>
     
     </div>
@@ -149,20 +148,20 @@
     </div>
     <div class="box5">
         <p class="title">NOW OPEN</p>
-        <div class="poster"><img src="img/poster.png"></div>
-        <div class="sub_title">
+        <div class="poster fix_width"><img src="img/poster.png"></div>
+        <div class="sub_title fix_width">
             <p>FOR CHALLENGERS</p>
-            <h3>피트니스 프로 대회 준비 코스</h3>
+            <h3>피트니스 프로<br> 대회 준비 아카데미</h3>
         </div>
-        <div class="content">
+        <div class="content fix_width">
             <p class="highlight">[어떤 프로젝트 팀인가요?]</p>
             <p class="txt">왜 같은 제안도 a가 말할때는 허황되고 불가능해보일까요? b가 브리핑하면 귀에 쏙쏙 잘 박히는 이유는 무엇일까요? 그 이유는 바로 세일즈를 잘하기 위한 스피치는 따로 있기 때문입니다. 자기 PR을 할 수 있는 기회가 주어지더라도 정해진 시간 내에 나를 제대로 sales하지 못하면, 소중한 기회를 날릴 수 있습니다. 이번 프로젝트에서는 자신의 업무 스피치의 전달력과 설득력을 높여주는 말하기법에 대해 익힙니다. 실제 발표 때 취하는 태도와 말투, 그외의 다양한 스킬들을 직접 실행해보며 스피치역량을 업그레이드 해 봐요!</p>
         </div>
-        <div class="content">
+        <div class="content fix_width">
             <p class="highlight">[목표]</p>
             <p class="txt">1. 스피치 스킬 업그레이드하기 <br>2. 헤이조이스에서 나만의 스피치 실행해보기</p>
         </div>
-        <div class="content">
+        <div class="content fix_width">
             <p class="highlight">[회차별 진행 내용]</p>
             <p class="txt">[1회차]<br>1. 세일즈 스피치 개론<br>– 세일즈스피치의 대가들<br>– 스피치로 인해 달라지는 세일즈의 첫인상<br>– 사업을 뇌리에 박는 스피치 매직 3가지 공개<br>2. 실전연습(미션) 내 세일즈 1분안에 소개하기</p>
             <p class="txt txt2">[2회차]<br>1. 세일즈 스피치의 스토리텔링<br>– 감동적인 클로징으로 고객 피치올리기<br>– 애드립던지는 법<br>– 인용 자연스럽게 녹이기<br>– 손과 눈빛으로 말하는 법<br>2. 실전연습(미션) 사업 5분 스피치 및 피드백</p>
@@ -170,24 +169,24 @@
         </div>
     </div>
     <div class="box6">
-        <div class="aco aco1">
+        <div class="aco aco1 fix_width">
             <p class="highlight">[FAQ] 모집이 마감된 팀에 대기를 할 수 있나요?<span></span></p>
             <p class="txt">꼭 참여하고 싶은 팀이 조기 마감 됐을 경우, 헤이조이스 카카오톡 플러스 친구( https://pf.kakao.com/_xixmxhLC )를 통해 대기 요청을 해주세요. 신청 기간 중 공석이 발생할 경우 합류할 수 있도록 도와드리겠습니다.</p>
         </div>
-        <div class="aco aco2">
+        <div class="aco aco2 fix_width">
             <p class="highlight">[FAQ] 모집이 마감된 팀에 대기를 할 수 있나요?<span></span></p>
             <p class="txt">꼭 참여하고 싶은 팀이 조기 마감 됐을 경우, 헤이조이스 카카오톡 플러스 친구( https://pf.kakao.com/_xixmxhLC )를 통해 대기 요청을 해주세요. 신청 기간 중 공석이 발생할 경우 합류할 수 있도록 도와드리겠습니다.</p>
         </div>
-        <div class="aco aco3">
+        <div class="aco aco3 fix_width">
             <p class="highlight">[FAQ] 모집이 마감된 팀에 대기를 할 수 있나요?<span></span></p>
             <p class="txt">꼭 참여하고 싶은 팀이 조기 마감 됐을 경우, 헤이조이스 카카오톡 플러스 친구( https://pf.kakao.com/_xixmxhLC )를 통해 대기 요청을 해주세요. 신청 기간 중 공석이 발생할 경우 합류할 수 있도록 도와드리겠습니다.</p>
         </div>
-        <div class="content">
+        <div class="content fix_width">
             <p class="highlight">[Contact]</p>
             <p class="txt">더미텍스트<br>더미텍스트</p>
         </div>
         
-        <div id="map"></div>
+        <div id="map" class="fix_width"></div>
         <script>
           var map;
           function initMap() {
@@ -199,7 +198,7 @@
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd1BsW5iG8pWvygjo4n0fJe7-BNiDpgOY&callback=initMap" async defer></script>
 
-        <p class="regis"><a href="#">수강신청서 작성하기</a></p>
+        <p class="regis fix_width"><a href="#">수강신청서 작성하기</a></p>
     </div>
     <div class="box7">footer</div>
 </body>
