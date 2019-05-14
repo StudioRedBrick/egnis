@@ -93,16 +93,11 @@ function instructor(){
 
 function scrollNav(){
     //set position of side nav according to window size
-    var getHeight = $(window).height(); 
-    var value = getHeight/2;
-    $(".box0").css({"top":value+"px"});
-    
-    $(window).resize(function(){
-        var getHeight = $(window).height(); 
-        var value = getHeight/2;
-        //console.log(value);
-        $(".box0").css({"top":value+"px"});
-    });
+    var getHeight = $(window).height();
+    var getWidth = $(window).width();
+    var valHeight = getHeight*(4/5);
+    var valWidth = getWidth*(1/5);
+    $(".box0").css({"top":valHeight+"px","right":valWidth+"px"});
     
     //when scrolltop clicked
     $(".box0 .nav_wrap .btn2").on('click',function(){
