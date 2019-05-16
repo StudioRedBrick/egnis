@@ -71,15 +71,15 @@ img{width: 100%;}
 }
 
 .box3 .academy_header{
-    width: 360px;
+    width: 70%;
     margin: 0 auto;
     margin-bottom: 100px;
 }
 
 .box3 .academy_text{
-    font-size: 19px;
-    line-height: 1.88;
-    width: 800px;
+    text-align: left;
+    font-size: 17px;
+    line-height: 1.6;
     margin: 0 auto;
     margin-bottom: 100px;
 }
