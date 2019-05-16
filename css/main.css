@@ -135,7 +135,7 @@ img{width: 100%;}
 .box4{
     background:#000000;
     color: #ffffff;
-    padding: 100px 0;
+    padding: 100px 0 70px;
 }
 
 .box4 .instructor_wrap .title{
@@ -147,48 +147,56 @@ img{width: 100%;}
     font-family: 'markmywords';
     font-size: 50px;
     display: inline-block;
-    border-bottom: 20px solid #00ff00;
+    padding-bottom: 4px;
+    border-bottom: 15px solid #00ff00;
 }
 
-.box4 .instructor_wrap .flexslider{
+.box4 .instructor_wrap .instr_slider{
     background: none;
     border: none;
 }
 
-.box4 .instructor_wrap .flexslider .slides li .instr_wrap{
-    
-}
-
-.box4 .instructor_wrap .flexslider .slides li .instr_wrap .instr_img{
-    background: #a0a0a0;
-    width: 100%;
-    height: 300px;
-}
-
-.box4 .instructor_wrap .flexslider .slides li .instr_wrap .instr_content{
+.box4 .instructor_wrap .instr_slider .instr_wrap .instr_content{
     margin: 0 auto;  
-    padding: 30px 30px 40px;
+    width: 400px;
+    padding: 0px 30px 40px;
+    margin-bottom: 30px;
 }
 
-.box4 .instructor_wrap .flexslider .slides li .instr_wrap .instr_content .instr_subtitle{
+.box4 .instructor_wrap .instr_slider .instr_wrap .instr_content .instr_img{
+    background: #a0a0a0;
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+.box4 .instructor_wrap .instr_slider .instr_wrap .instr_content .instr_text{
+    padding: 0 30px;
+}
+
+.box4 .instructor_wrap .instr_slider .instr_wrap .instr_content .instr_subtitle{
     font-family: 'metropolis-light';
     font-size: 16px;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.box4 .instructor_wrap .flexslider .slides li .instr_wrap .instr_content .instr_name{
+.box4 .instructor_wrap .instr_slider .instr_wrap .instr_content .instr_name{
     font-size: 28px;
     font-weight: 700;
     line-height: 1.4; 
-    margin-bottom: 40px;    
+    margin-bottom: 30px;    
 }
 
-.box4 .instructor_wrap .flexslider .slides li .instr_wrap .instr_content .instr_description{
+.box4 .instructor_wrap .instr_slider .instr_wrap .instr_content .instr_description{
+    width: 360px;
     font-size: 15px;
     font-weight: 300;
     line-height: 1.8;    
 }
+
+
 
 /*box4 END*/
 /*---------------------------------------------------------*/
@@ -222,6 +230,135 @@ img{width: 100%;}
 /*box6 END*/
 /*---------------------------------------------------------*/
 /*box7 START*/ /*yeeun*/
-.box7{background:#000000;}
+.box7{
+    background:#000000;
+    color: #ffffff;
+}
+
+.box7 .txt_en{
+    font-family: 'metropolis-light';
+    letter-spacing: 1px;
+}
+
+.box7 > div{
+    padding: 15px 0;
+}
+
+.box7 .footer_top{  
+    padding: 50px 0 200px;
+}
+
+.box7 .footer_top .footer_content{
+    width: 25%;
+    float: left;
+    font-size: 13px;
+}
+
+.box7 a{
+    color: #999999;
+}
+
+.box7 .footer_top .footer_content p{
+    margin-bottom: 10px;
+}
+
+.box7 .footer_top .footer_content p.footer_text{
+    color: #999999;
+}
+
+.box7 .footer_top .footer_content p:hover{
+    cursor: pointer;
+}
+
+.box7 .footer_top .footer_content p:not(.nonhover):hover,
+.box7 .footer_copy .copy_content p:hover,
+.box7 .footer_bottom .bottom_content .highlight:hover{
+    color: #00ff00;
+    cursor: pointer;
+}
+
+.box7 .footer_top .footer_content .family a,
+.box7 .footer_top .footer_content .social a{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    opacity: 0.5;
+    
+    background: #ffffff;
+    border-radius: 100px;
+}
+
+.box7 .footer_top .footer_content .family a:hover,
+.box7 .footer_top .footer_content .social a:hover{
+    opacity: 1;
+}
+
+.box7 .footer_copy{
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+}
+
+.box7 .footer_copy .copy_nation{
+    float: left;
+    padding: 0 30px;
+    width: 80px;
+}
+
+.box7 .footer_copy .copy_nation .flag{
+    float: left;
+    width: 20px;
+    height: 15px;
+    background: url('../img/ko_flag.png') center center no-repeat;
+    background-size: contain;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.box7 .footer_copy .copy_nation .nation{
+    font-size: 12px;
+}
+
+.box7 .footer_copy .copy_right{
+    float: left;
+    font-size: 12px;
+    color: #999999;
+}
+
+.box7 .footer_copy .copy_content{
+    float: right;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.box7 .footer_copy .copy_content p{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.box7 .footer_bottom .bottom_content{
+    float: left;
+    width: 45%;
+}
+
+.box7 .footer_bottom .bottom_content:last-of-type{
+    float: right;
+}
+
+.box7 .footer_bottom .bottom_content p{
+    font-size: 12px;
+    color: #999999;
+    line-height: 1.88;
+}
+
+.box7 .footer_bottom .bottom_content .highlight{
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.box7 .footer_bottom .bottom_content .under{
+    border-bottom: 1px solid;
+}
+
 /*box7 END*/
 /*---------------------------------------------------------*/

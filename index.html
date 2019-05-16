@@ -11,7 +11,8 @@
     <!--favicon-->
     <link rel="shortcut icon" type="image/png" href="/img/favicon.png"/>
     <!--css-->
-    <link rel="stylesheet" type="text/css" href="./css/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="./css/jquery.bxslider.css">
     <link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css">
     <link rel="stylesheet" type="text/css" href="./css/jquery-ui.structure.min.css">
@@ -20,8 +21,8 @@
     <!--js-->
     <script type="text/javascript" src="./js/vendor/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/vendor/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="./js/vendor/jquery.flexslider.js"></script>
     <script type="text/javascript" src="./js/vendor/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="./js/vendor/slick.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
     
     <!-- detect mobile device -->
@@ -109,39 +110,51 @@
             <div class="title">
                 <p>INSTRUCTORS</p>
             </div>
-            <div class="flexslider carousel">
-                <ul class="slides">
-                    <li>
-                        <div class="instr_wrap">
-                            <div class="instr_img"></div>
-                            <div class="instr_content">
-                                <p class="instr_subtitle">DIRECTOR</p>
-                                <p class="instr_name">김영준 감독1</p>
-                                <p class="instr_description">트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝 전문가로써 갖춰야 하는  코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝</p>
-                            </div>
+            <div class="instr_slider">
+                <div class="instr_wrap">
+                    <div class="instr_content">
+                        <div class="instr_img"></div>
+                        <div class="instr_text">
+                            <p class="instr_subtitle">DIRECTOR</p>
+                            <p class="instr_name">김영준 감독1</p>
+                            <p class="instr_description">트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝 전문가로써 갖춰야 하는  코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝</p>
                         </div>
-                    </li>
-                    <li>
-                        <div class="instr_wrap">
-                            <div class="instr_img"></div>
-                            <div class="instr_content">
-                                <p class="instr_subtitle">DIRECTOR</p>
-                                <p class="instr_name">김영준 감독2</p>
-                                <p class="instr_description">트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝 전문가로써 갖춰야 하는  코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝</p>
-                            </div>
+                    </div>
+                </div>
+                
+                <div class="instr_wrap">
+                    <div class="instr_content">
+                        <div class="instr_img"></div>
+                        <div class="instr_text">
+                            <p class="instr_subtitle">DIRECTOR</p>
+                            <p class="instr_name">김영준 감독2</p>
+                            <p class="instr_description">트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝 전문가로써 갖춰야 하는  코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝</p>
                         </div>
-                    </li>
-                    <li>
-                        <div class="instr_wrap">
-                            <div class="instr_img"></div>
-                            <div class="instr_content">
-                                <p class="instr_subtitle">DIRECTOR</p>
-                                <p class="instr_name">김영준 감독3</p>
-                                <p class="instr_description">트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝 전문가로써 갖춰야 하는  코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝</p>
-                            </div>
+                    </div>
+                </div>
+                
+                <div class="instr_wrap">
+                    <div class="instr_content">
+                        <div class="instr_img"></div>
+                        <div class="instr_text">
+                            <p class="instr_subtitle">DIRECTOR</p>
+                            <p class="instr_name">김영준 감독3</p>
+                            <p class="instr_description">트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝 전문가로써 갖춰야 하는  코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝</p>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                
+                <div class="instr_wrap">
+                    <div class="instr_content">
+                        <div class="instr_img"></div>
+                        <div class="instr_text">
+                            <p class="instr_subtitle">DIRECTOR</p>
+                            <p class="instr_name">김영준 감독4</p>
+                            <p class="instr_description">트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝 전문가로써 갖춰야 하는  코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝</p>
+                        </div>
+                    </div>
+                </div>
+                    
             </div>
             
             
@@ -201,7 +214,56 @@
 
         <p class="regis"><a href="#">수강신청서 작성하기</a></p>
     </div>
-    <div class="box7">footer</div>
+    <div class="box7">
+        <div class="footer_top clearfix fix_width">
+            <div class="footer_content">
+                <p class="footer_title">강의 안내</p>
+            </div>
+            <div class="footer_content">
+                <p class="footer_title nonhover">고객센터</p>
+                <a href="tel:000-000-0000"><p class="footer_text">000 - 000 - 0000</p></a>
+                <a href="#"><p class="footer_text">자주 묻는 질문</p></a>
+                <a href="#"><p class="footer_text">1:1 문의 안내</p></a>
+                <a href="#"><p class="footer_text">이용약관</p></a>
+                <a href="#"><p class="footer_text">개인정보처리방침</p></a>
+            </div>
+            <div class="footer_content">
+                <p class="footer_title nonhover txt_en">FAMILY SITE</p>
+                <div class="family">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="footer_content">
+                <p class="footer_title nonhover txt_en">SOCIAL</p>
+                <div class="social">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_copy clearfix">
+            <div class="copy_nation clearfix">
+                <div class="flag"></div>
+                <p class="nation">대한민국</p>
+            </div>
+            <div class="copy_right">
+            <p>&copy; 2019 Nike, Inc, All Rights Reserved.</p>
+            </div>
+            <div class="copy_content">
+                <a href="#"><p>이용약관</p></a>
+                <a href="#"><p>개인정보처리방침</p></a>
+            </div>
+        </div>
+        <div class="footer_bottom fix_width clearfix">
+            <div class="bottom_content"><p>유)나이키코리아 대표 KIM MYUNG HEE 서울 강남구 테헤란로 152 강남파이낸스센터 31층 통신판매업신고번호 2011-서울강남-03461 등록번호 220-88-09068 <a class="highlight">사업자정보확인</a> 개인정보보호책임자 ANDY HOUGHTON 정보보호최고책임자 이희준 고객센터 전화문의 <a class="highlight" href="000-000-0000">080-022-0182</a> FAX 02-6744-5880 E-mail service@nike.co.kr 호스팅서비스사업자 브리즈</p></div>
+            <div class="bottom_content"><p>안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 KG 이니시스의 구매안전 서비스 (채무지급보증)를 이용하실 수 있습니다.온라인디지털콘텐츠사업발전법에 의한 <a class="highlight under">콘텐츠보호안내 자세히보기</a></p></div>
+        </div>
+    </div>
+    
 </body>
     
 </html>
