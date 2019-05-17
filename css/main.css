@@ -50,10 +50,24 @@ img{width: 100%;}
 /*box2 START*/ /*subin*/
 .box2{background:#0600ff;}
 .box2 .slider{width:100%;}
-.box2 .slider li{height:600px; background:#000;}
+.box2 .slider li{height:650px; position:relative;}
 
-.box2 .slider li p{width:50%; height:600px; background:blue; position:relative;}
-.box2 .slider li p img{width:360px; position:absolute; top:150px; left:50%; margin-left:-180px;}
+.box2 .slider li .left{width:50%; height:650px; background:blue; position:relative;}
+.box2 .slider li .left img{position:absolute; left:50%;}
+
+/*left slogan*/
+.box2 .slider li .left1 img{width:360px; top:175px; margin-left:-180px;}
+.box2 .slider li .left2 img{width:320px; top:270px; margin-left:-160px;}
+.box2 .slider li .left3 img{width:300px; top:130px; margin-left:-150px;}
+
+/*right banner image*/
+.box2 .slider .bans .right{width:50%; height:650px; background:red; position:absolute; top:0; left:50%;}
+.box2 .slider .ban1 .right{background-image:url(../img/ban1.png); background-repeat:no-repeat; background-size:cover;}
+.box2 .slider .ban2 .right{background-image:url(../img/ban2.png); background-repeat:no-repeat; background-size:cover;}
+.box2 .slider .ban3 .right{background-image:url(../img/ban3.png); background-repeat:no-repeat; background-size:cover;}
+.box2 .slider .ban4 .right{background-image:url(../img/ban4.png); background-repeat:no-repeat; background-size:cover;}
+.box2 .slider .ban5 .right{background-image:url(../img/ban5.png); background-repeat:no-repeat; background-size:cover;}
+
 /*box2 END*/
 /*---------------------------------------------------------*/
 /*box3 START*/ /*yeeun*/
@@ -220,7 +234,7 @@ img{width: 100%;}
 .box6 .aco .txt{transform:scaleY(0%); height:0px; opacity:0;}
 .box6 .aco p span{width:20px; height:20px; display:block; background-image:url(../img/icon_plus.png); background-repeat:no-repeat; background-size:cover; position:absolute; top:7px; right:0;}
 
-.box6 .content{width:800px; margin:0 auto; padding:130px 0 50px 0;}
+.box6 .content{width:800px; margin:0 auto; padding:110px 0 50px 0;}
 .box6 .content .txt{opacity:0.8;}
 .box6 .regis{width:800px; margin:30px auto 0 auto;}
 .box6 .regis a{width:200px; background:#00ff00; display:block; font-size:20px; font-weight:bold; padding:20px 50px; text-align:center;}
