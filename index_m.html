@@ -12,7 +12,8 @@
     <!--favicon-->
     <link rel="shortcut icon" type="image/png" href="/img/favicon.png"/>
     <!--css-->
-    <link rel="stylesheet" type="text/css" href="./css/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="./css/jquery.bxslider.css">
     <link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css">
     <link rel="stylesheet" type="text/css" href="./css/jquery-ui.structure.min.css">
@@ -21,7 +22,7 @@
     <!--js-->
     <script type="text/javascript" src="./js/vendor/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/vendor/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="./js/vendor/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="./js/vendor/slick.min.js"></script>
     <script type="text/javascript" src="./js/vendor/jquery.bxslider.js"></script>
     <script type="text/javascript" src="./js/mobile.js"></script>
 </head>
@@ -110,42 +111,52 @@
             <div class="title">
                 <p>INSTRUCTORS</p>
             </div>
-            <div class="flexslider carousel">
-                <ul class="slides">
-                    <li>
-                        <div class="instr_wrap">
-                            <div class="instr_img"></div>
-                            <div class="instr_content">
-                                <p class="instr_subtitle">DIRECTOR</p>
-                                <p class="instr_name">김영준 감독1</p>
-                                <p class="instr_description">트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝 전문가로써 갖춰야 하는  코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝</p>
-                            </div>
+            <div class="instr_slider">
+                <div class="instr_wrap">
+                    <div class="instr_content">
+                        <div class="instr_img"></div>
+                        <div class="instr_text">
+                            <p class="instr_subtitle">DIRECTOR</p>
+                            <p class="instr_name">김영준 감독1</p>
+                            <p class="instr_description">트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝 전문가로써 갖춰야 하는  코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝</p>
                         </div>
-                    </li>
-                    <li>
-                        <div class="instr_wrap">
-                            <div class="instr_img"></div>
-                            <div class="instr_content">
-                                <p class="instr_subtitle">DIRECTOR</p>
-                                <p class="instr_name">김영준 감독2</p>
-                                <p class="instr_description">트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝 전문가로써 갖춰야 하는  코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝</p>
-                            </div>
+                    </div>
+                </div>
+                
+                <div class="instr_wrap">
+                    <div class="instr_content">
+                        <div class="instr_img"></div>
+                        <div class="instr_text">
+                            <p class="instr_subtitle">DIRECTOR</p>
+                            <p class="instr_name">김영준 감독2</p>
+                            <p class="instr_description">트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝 전문가로써 갖춰야 하는  코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝</p>
                         </div>
-                    </li>
-                    <li>
-                        <div class="instr_wrap">
-                            <div class="instr_img"></div>
-                            <div class="instr_content">
-                                <p class="instr_subtitle">DIRECTOR</p>
-                                <p class="instr_name">김영준 감독3</p>
-                                <p class="instr_description">트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝 전문가로써 갖춰야 하는  코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝</p>
-                            </div>
+                    </div>
+                </div>
+                
+                <div class="instr_wrap">
+                    <div class="instr_content">
+                        <div class="instr_img"></div>
+                        <div class="instr_text">
+                            <p class="instr_subtitle">DIRECTOR</p>
+                            <p class="instr_name">김영준 감독3</p>
+                            <p class="instr_description">트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝 전문가로써 갖춰야 하는  코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝</p>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                
+                <div class="instr_wrap">
+                    <div class="instr_content">
+                        <div class="instr_img"></div>
+                        <div class="instr_text">
+                            <p class="instr_subtitle">DIRECTOR</p>
+                            <p class="instr_name">김영준 감독4</p>
+                            <p class="instr_description">트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝 전문가로써 갖춰야 하는  코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 코칭 &amp; 커뮤니케이션 실무 아카데미 트레이닝 전문가로써 갖춰야 하는 실무 아카데미 트레이닝 트레이닝</p>
+                        </div>
+                    </div>
+                </div>
+                    
             </div>
-            
-            
         </div>
     </div>
     <div class="box5">

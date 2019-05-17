@@ -73,21 +73,13 @@ function bxSlider(){
     });
 }
 function instructor(){
-    // flexslider
-    $('.flexslider').flexslider({
-        animation: "slide",
-        animationLoop: false,
-        slideshow:true,
-        itemWidth: 210,
-        itemMargin: 160,
-        minItems: 2,
-        maxItems: 2,
-        move:1,
-//        end : function(slider){
-//                $('.flexslider .slides li').each(function(){ slider.addSlide('<li>'+j$(this).context.innerHTML+'</li>', slider.count);
-//                    jQuery('.flexslider .slides').append('<li>'+jQuery(this).context.innerHTML+'</li>');
-//                });
-//            }
+     $('.instr_slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000
     });
 }
 
