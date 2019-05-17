@@ -5,6 +5,7 @@ $(document).ready(function(){
     scrollNav();
     menuScroll();
     sideNav();
+    footeraco();
 }); //document ready END 
 
 function faqAco(){
@@ -78,8 +79,8 @@ function instructor(){
         slidesToScroll: 1,
         dots: true,
         arrows: false,
-//        autoplay: true,
-        autoplaySpeed: 2000
+        autoplay: true,
+        autoplaySpeed: 4000
     });
 }
 
@@ -126,4 +127,15 @@ function sideNav(){
     $(".box1 .ham_wrap .header li:nth-child(2)").on('click',function(){
         $(".box1 .ham_wrap").animate({"margin-left":"100vw"});
     });
+}
+
+function footeraco(){
+
+    $(".footer_aco a").on("click",function(){
+        $(this).toggleClass("active",700);
+        var acopanel = $(this).parent().find(".aco_panel");
+        acopanel.slideToggle(700, function(){});
+        
+    });
+
 }
