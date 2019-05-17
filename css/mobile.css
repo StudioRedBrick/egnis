@@ -67,7 +67,7 @@ img{width: 100%;}
 .box3{
     height: auto;
     text-align: center;
-    padding: 100px 0;
+    padding: 5em 0;
 }
 
 .box3 .academy_header{
@@ -139,7 +139,7 @@ img{width: 100%;}
 .box4{
     background:#000000;
     color: #ffffff;
-    padding: 100px 0 70px;
+    padding: 5em 0;
 }
 
 .box4 .instructor_wrap .title{
@@ -162,7 +162,7 @@ img{width: 100%;}
 
 .box4 .instructor_wrap .instr_slider .instr_wrap .instr_content{
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 1em;
 }
 
 .box4 .instructor_wrap .instr_slider .instr_wrap .instr_content .instr_img{
@@ -174,29 +174,34 @@ img{width: 100%;}
 }
 
 .box4 .instructor_wrap .instr_slider .instr_wrap .instr_content .instr_text{
-    padding: 1.4em 1.2em;
+    padding: 1.4em 1.4em;
 }
 
 .box4 .instructor_wrap .instr_slider .instr_wrap .instr_content .instr_subtitle{
     font-family: 'metropolis-light';
     font-size: 16px;
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
 .box4 .instructor_wrap .instr_slider .instr_wrap .instr_content .instr_name{
     font-size: 28px;
     font-weight: 700;
     line-height: 1.4; 
-    margin-bottom: 30px;    
+    margin-bottom: 1em;    
 }
 
 .box4 .instructor_wrap .instr_slider .instr_wrap .instr_content .instr_description{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 300;
-    line-height: 1.8;    
+    line-height: 1.7;    
 }
 
+
+.slick-dots li button{
+    width: 8px;
+    height: 8px;
+}
 
 /*box4 END*/
 /*---------------------------------------------------------*/
