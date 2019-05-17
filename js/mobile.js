@@ -74,7 +74,7 @@ function bxSlider(){
 }
 function instructor(){
      $('.instr_slider').slick({
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
         arrows: false,

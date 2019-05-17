@@ -103,7 +103,7 @@ img{width: 100%;}
 .box3 .academy_session .acd_session .acd_img{
     background: #000000;
     width: 100%;
-    height: 200px;
+    height: 210px;
 }
 
 .box3 .academy_session .acd_session .acd_txt{
@@ -133,15 +133,13 @@ img{width: 100%;}
     font-weight: 300;
     line-height: 1.6;
 }
-
-
 /*box3 END*/
 /*---------------------------------------------------------*/
 /*box4 START*/ /*yeeun*/
 .box4{
     background:#000000;
     color: #ffffff;
-    padding: 100px 0;
+    padding: 100px 0 70px;
 }
 
 .box4 .instructor_wrap .title{
@@ -151,50 +149,54 @@ img{width: 100%;}
 
 .box4 .instructor_wrap .title p{
     font-family: 'markmywords';
-    font-size: 50px;
+    font-size: 36px;
     display: inline-block;
-    border-bottom: 20px solid #00ff00;
+    padding-bottom: 4px;
+    border-bottom: 12px solid #00ff00;
 }
 
-.box4 .instructor_wrap .flexslider{
+.box4 .instructor_wrap .instr_slider{
     background: none;
     border: none;
 }
 
-.box4 .instructor_wrap .flexslider .slides li .instr_wrap{
-    
+.box4 .instructor_wrap .instr_slider .instr_wrap .instr_content{
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
-.box4 .instructor_wrap .flexslider .slides li .instr_wrap .instr_img{
+.box4 .instructor_wrap .instr_slider .instr_wrap .instr_content .instr_img{
     background: #a0a0a0;
+    margin: 0 auto;
     width: 100%;
-    height: 300px;
+    height: 320px;
+    margin-bottom: 1.1em;
 }
 
-.box4 .instructor_wrap .flexslider .slides li .instr_wrap .instr_content{
-    margin: 0 auto;  
-    padding: 30px 30px 40px;
+.box4 .instructor_wrap .instr_slider .instr_wrap .instr_content .instr_text{
+    padding: 1.4em 1.2em;
 }
 
-.box4 .instructor_wrap .flexslider .slides li .instr_wrap .instr_content .instr_subtitle{
+.box4 .instructor_wrap .instr_slider .instr_wrap .instr_content .instr_subtitle{
     font-family: 'metropolis-light';
     font-size: 16px;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.box4 .instructor_wrap .flexslider .slides li .instr_wrap .instr_content .instr_name{
+.box4 .instructor_wrap .instr_slider .instr_wrap .instr_content .instr_name{
     font-size: 28px;
     font-weight: 700;
     line-height: 1.4; 
-    margin-bottom: 40px;    
+    margin-bottom: 30px;    
 }
 
-.box4 .instructor_wrap .flexslider .slides li .instr_wrap .instr_content .instr_description{
+.box4 .instructor_wrap .instr_slider .instr_wrap .instr_content .instr_description{
     font-size: 15px;
     font-weight: 300;
     line-height: 1.8;    
 }
+
 
 /*box4 END*/
 /*---------------------------------------------------------*/
