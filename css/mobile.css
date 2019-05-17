@@ -277,6 +277,11 @@ img{width: 100%;}
     margin-bottom: 0.5em;
 }
 
+.box7 .footer_wrap .footer_notice .footer_text{
+    font-size: 14px;
+    line-height: 1.6;
+}
+
 .box7 .footer_wrap .footer_aco_wrap .footer_aco{
     position: relative;
     border-bottom: 1px solid #999999;
