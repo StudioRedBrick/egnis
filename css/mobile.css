@@ -2,23 +2,23 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 @font-face {
-font-family: "markmywords";
+font-family: 'markmywords';
 src: url("../font/mark_my_words/mark_my_words.otf") format("opentype"),
     url("../font/mark_my_words/mark_my_words.ttf") format("truetype");
 }
 
 @font-face {
-font-family: "metropolis";
+font-family: 'metropolis';
 src: url("../font/metropolis/Metropolis-Regular.otf") format("opentype");
 }
 
 @font-face {
-font-family: "metropolis-light";
+font-family: 'metropolis-light';
 src: url("../font/metropolis/Metropolis-Light.otf") format("opentype");
 }
 
 @font-face {
-font-family: "metropolis-black";
+font-family: 'metropolis-black';
 src: url("../font/metropolis/Metropolis-Black.otf") format("opentype");
 }
 
@@ -81,7 +81,7 @@ img{width: 100%;}
     font-size: 19px;
     line-height: 1.7;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 3em;
 }
 
 .box3 .academy_session{
@@ -97,13 +97,13 @@ img{width: 100%;}
 }
 
 .box3 .academy_session .acd_session:last-of-type .acd_ss{
-    padding-right: 0;
+    margin-bottom: 0;
 }
 
 .box3 .academy_session .acd_session .acd_img{
     background: #000000;
     width: 100%;
-    height: 240px;
+    height: 200px;
 }
 
 .box3 .academy_session .acd_session .acd_txt{
@@ -125,14 +125,14 @@ img{width: 100%;}
     font-size: 23px;
     font-weight: 700;
     line-height: 1.4; 
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
 }
 
 .box3 .academy_session .acd_session .acd_txt .acd_txt_description{
     font-size: 14px;
     font-weight: 300;
     line-height: 1.5;
-    width: 90%;
+    width: 76%;
 }
 
 
