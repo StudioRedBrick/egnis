@@ -237,9 +237,8 @@ img{width: 100%;}
     color: #ffffff;
 }
 
-.box7 .txt_en{
-    font-family: 'metropolis-light';
-    letter-spacing: 1px;
+.footer_wrap{
+    padding: 3em 0;
 }
 
 .box7 p{
@@ -256,16 +255,22 @@ img{width: 100%;}
     color: #ffffff;
 }
 
-.footer_wrap{
-    padding: 3em 0;
+.box7 .txt_en{
+    font-family: 'metropolis-light';
+    letter-spacing: 1px;
+}
+
+.box7 p.footer_num{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.box7 .footer_wrap > div{
+    padding: 1em 0;
+    border-bottom: 1px solid #999999;
 }
 
 
-
-.box7 .footer_top .footer_content p.footer_num{
-    font-size: 20px;
-    font-weight: 900;
-}
 
 /*
 
