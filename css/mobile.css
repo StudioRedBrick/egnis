@@ -144,7 +144,7 @@ img{width: 100%;}
 
 .box4 .instructor_wrap .title{
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 3em;
 }
 
 .box4 .instructor_wrap .title p{
@@ -197,7 +197,6 @@ img{width: 100%;}
     line-height: 1.7;    
 }
 
-
 .slick-dots li button,
 .slick-dots li{
     width: 8px;
@@ -233,6 +232,138 @@ img{width: 100%;}
 /*box6 END*/
 /*---------------------------------------------------------*/
 /*box7 START*/ /*yeeun*/
-.box7{background:#000000;}
+.box7{
+    background:#000000;
+    color: #ffffff;
+}
+
+.box7 .txt_en{
+    font-family: 'metropolis-light';
+    letter-spacing: 1px;
+}
+
+.box7 p{
+    font-size: 16px;
+    line-height: 1.7;  
+}
+
+.box7 a,
+.box7 p.footer_text{
+    color: #999999;
+}
+.box7 p.footer_num,
+.box7 p.footer_title{
+    color: #ffffff;
+}
+
+.footer_wrap{
+    padding: 3em 0;
+}
+
+
+
+.box7 .footer_top .footer_content p.footer_num{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/*
+
+.box7 .footer_top .footer_content p:hover{
+    cursor: pointer;
+}
+
+.box7 .footer_top .footer_content p:not(.nonhover):hover,
+.box7 .footer_copy .copy_content p:hover,
+.box7 .footer_bottom .bottom_content .highlight:hover{
+    color: #00ff00;
+    cursor: pointer;
+}
+*/
+
+.box7 .footer_top .footer_content .family a,
+.box7 .footer_top .footer_content .social a{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    opacity: 0.5;
+    
+    background: #ffffff;
+    border-radius: 100px;
+}
+/*
+
+.box7 .footer_top .footer_content .family a:hover,
+.box7 .footer_top .footer_content .social a:hover{
+    opacity: 1;
+}
+*/
+
+.box7 .footer_copy{
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+}
+
+.box7 .footer_copy .copy_nation{
+    float: left;
+    padding: 0 30px;
+    width: 80px;
+}
+
+.box7 .footer_copy .copy_nation .flag{
+    float: left;
+    width: 20px;
+    height: 15px;
+    background: url('../img/ko_flag.png') center center no-repeat;
+    background-size: contain;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.box7 .footer_copy .copy_nation .nation{
+    font-size: 12px;
+}
+
+.box7 .footer_copy .copy_right{
+    float: left;
+    font-size: 12px;
+    color: #999999;
+}
+
+.box7 .footer_copy .copy_content{
+    float: right;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.box7 .footer_copy .copy_content p{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.box7 .footer_bottom .bottom_content{
+    float: left;
+    width: 45%;
+}
+
+.box7 .footer_bottom .bottom_content:last-of-type{
+    float: right;
+}
+
+.box7 .footer_bottom .bottom_content p{
+    font-size: 12px;
+    color: #999999;
+    line-height: 1.88;
+}
+
+.box7 .footer_bottom .bottom_content .highlight{
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.box7 .footer_bottom .bottom_content .under{
+    border-bottom: 1px solid;
+}
 /*box7 END*/
 /*---------------------------------------------------------*/
