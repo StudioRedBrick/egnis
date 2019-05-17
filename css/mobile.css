@@ -103,7 +103,7 @@ img{width: 100%;}
 .box3 .academy_session .acd_session .acd_img{
     background: #000000;
     width: 100%;
-    height: 220px;
+    height: 240px;
 }
 
 .box3 .academy_session .acd_session .acd_txt{
@@ -111,21 +111,21 @@ img{width: 100%;}
     text-align: left;
     color: #ffffff; 
 /*    padding: 30px 20px 40px;*/
-    padding: 1.5em 1.2em;
+    padding: 1.7em 1.2em;
 }
 
 .box3 .academy_session .acd_session .acd_txt .acd_txt_subtitle{
     font-family: 'metropolis-light';
     font-size: 14px;
     letter-spacing: 1.4px;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .box3 .academy_session .acd_session .acd_txt .acd_txt_title{
     font-size: 23px;
     font-weight: 700;
     line-height: 1.4; 
-    margin-bottom: 20px;
+    margin-bottom: 1em;
 }
 
 .box3 .academy_session .acd_session .acd_txt .acd_txt_description{
