@@ -79,7 +79,7 @@ function instructor(){
         slidesToScroll: 1,
         dots: true,
         arrows: false,
-        autoplay: true,
+//        autoplay: true,
         autoplaySpeed: 4000
     });
 }
