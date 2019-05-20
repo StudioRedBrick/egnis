@@ -103,6 +103,7 @@ img{width: 100%;}
 .box3 .academy_session .acd_session{
     width: 33.3333%;
     float: left;
+    cursor:pointer;
 }
 
 .box3 .academy_session .acd_session .acd_ss{
@@ -329,6 +330,10 @@ img{width: 100%;}
     line-height: 1.7;  
 }
 
+.box7 p span{
+    font-size: 13px;
+}
+
 .box7 a, .box7 p{
     color: #ffffff;
 }
@@ -340,6 +345,12 @@ img{width: 100%;}
 
 .box7 p.footer_text{
     color: #999999;
+}
+
+.box7 p.footer_text span{
+    display:block;
+    color: #fff;
+    padding-top:12px;
 }
 
 .box7 .txt_en{

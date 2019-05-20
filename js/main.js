@@ -4,6 +4,7 @@ $(document).ready(function(){
     faqAco();
     scrollNav();
     menuScroll();
+    acaHover();
 }); //document ready END 
 
 function faqAco(){
@@ -113,5 +114,16 @@ function menuScroll(){
     });
     $(".box1 .menu li:nth-child(4)").on('click', function(){
         $('html,body').animate({scrollTop: $(".box3").position().top},'medium');    
+    });
+}
+
+function acaHover(){
+    $(".box3 .academy_session .acd_session").on('mouseenter',function(){
+        var target = $(this).find('.acd_txt');
+        target.css({"background":"#00ff00"});
+    });
+    $(".box3 .academy_session .acd_session").on('mouseleave',function(){
+        var target = $(this).find('.acd_txt');
+        target.css({"background":"#0600ff"});
     });
 }

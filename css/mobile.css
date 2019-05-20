@@ -34,7 +34,7 @@ img{width: 100%;}
 /*---------------------------------------------------------*/
 .fix_width{width:85.5%; margin:0 auto;}
 .highlight{font-weight:bold;}
-.content p{color:#fff; font-size:18px; line-height:1.78;}/*본문*/
+.content p{color:#fff; font-size:18px; line-height:1.72;}/*본문*/
 .clearfix::after {content:""; clear:both; display:block;}
 /*---------------------------------------------------------*/
 /*box0 START*/ /*side nav*/
@@ -89,13 +89,13 @@ img{width: 100%;}
 .box3 .academy_header{
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .box3 .academy_text{
     text-align: left;
-    font-size: 19px;
-    line-height: 1.7;
+    font-size: 18px;
+    line-height: 1.72;
     margin: 0 auto;
     margin-bottom: 3em;
 }
@@ -179,7 +179,7 @@ img{width: 100%;}
 .box4{
     background:#000000;
     color: #ffffff;
-    padding: 5em 0;
+    padding: 5em 0 2em 0;
 }
 
 .box4 .instructor_wrap .title{
@@ -337,6 +337,12 @@ img{width: 100%;}
     color: #999999;
 }
 
+.box7 p.footer_text span{
+    color: #fff;
+    display:block;
+    padding-top:20px;
+}
+
 .box7 .txt_en{
     font-family: 'metropolis-light';
     letter-spacing: 1px;
@@ -406,6 +412,10 @@ img{width: 100%;}
 }
 
 .box7 .footer_wrap .footer_info .info_txt{
+    font-size: 10px;
+}
+
+.box7 .footer_wrap .footer_info .info_txt span{
     font-size: 14px;
 }
 
