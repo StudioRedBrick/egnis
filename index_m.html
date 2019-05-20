@@ -291,10 +291,23 @@
         <script>
           var map;
           function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-              center: {lat: -34.397, lng: 150.644},
-              zoom: 8
+              
+            var locationRio = {lat: 37.499933, lng: 127.034319};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 17,
+              center: locationRio,
+              gestureHandling: 'cooperative'
             });
+            var marker = new google.maps.Marker({
+              position: locationRio,
+              map: map,
+              title: 'NABBA'
+            });
+              
+            /*map = new google.maps.Map(document.getElementById('map'), {
+              center: {lat: 37.499933, lng: 127.034319},
+              zoom: 15
+            });*/
           }
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd1BsW5iG8pWvygjo4n0fJe7-BNiDpgOY&callback=initMap" async defer></script>
