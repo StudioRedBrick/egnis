@@ -54,7 +54,7 @@ img{width: 100%;}
 .box1 .ham_wrap .header li:nth-child(2){width:30px; position:absolute; right:0px; top:23px; cursor:pointer;}
 .box1 .ham_wrap .menu{padding-top:50px;}
 .box1 .ham_wrap .menu li{font-size:40px; line-height:40px; font-family:'metropolis-black'; color:#fff; padding:12px 0; cursor:pointer;}
-.box1 .ham_wrap .image{margin-top:-35px; height:355px; background:red;}
+.box1 .ham_wrap .image{margin-top:-35px; height:355px; background:red; background-image:url(../img/ham_menu.jpg); background-repeat:no-repeat; background-size:cover; background-position:0 60%;}
 /*box1 END*/
 /*---------------------------------------------------------*/
 /*box2 START*/ /*subin*/

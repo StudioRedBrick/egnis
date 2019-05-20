@@ -68,7 +68,7 @@ function faqAco(){
 function bxSlider(){
     $('.slider').bxSlider({
         auto:true,
-        pause:30000,
+        pause:3000,
         speed:500,
         touchEnabled:true
     });
@@ -79,8 +79,8 @@ function instructor(){
         slidesToScroll: 1,
         dots: true,
         arrows: false,
-//        autoplay: true,
-        autoplaySpeed: 4000
+        autoplay: true,
+        autoplaySpeed: 3000
     });
 }
 
