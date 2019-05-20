@@ -54,13 +54,13 @@ img{width: 100%;}
 .box1 .ham_wrap .header li:nth-child(2){width:30px; position:absolute; right:0px; top:23px; cursor:pointer;}
 .box1 .ham_wrap .menu{padding-top:50px;}
 .box1 .ham_wrap .menu li{font-size:40px; line-height:40px; font-family:'metropolis-black'; color:#fff; padding:12px 0; cursor:pointer;}
-.box1 .ham_wrap .image{margin-top:-35px; height:355px; background:red; background-image:url(../img/ham_menu.jpg); background-repeat:no-repeat; background-size:cover; background-position:0 60%;}
+.box1 .ham_wrap .image{margin-top:-35px; height:355px; background-image:url(../img/ham_menu.jpg); background-repeat:no-repeat; background-size:cover; background-position:0 60%;}
 /*box1 END*/
 /*---------------------------------------------------------*/
 /*box2 START*/ /*subin*/
 .box2{background:#0600ff; padding-top:75px;}
 .box2 .slider{width:100%;}
-.box2 .slider li{height:700px; background:red;}
+.box2 .slider li{height:700px;}
 
 .box2 .slider li .left{width:100%; height:350px; background:blue; position:relative;}
 .box2 .slider li .left img{position:absolute; left:50%;}
@@ -70,7 +70,7 @@ img{width: 100%;}
 .box2 .slider li .left3 img{width:180px; top:53px; margin-left:-90px;}
 
 /*right banner image*/
-.box2 .slider .bans .right{width:100%; height:350px; background:green;}
+.box2 .slider .bans .right{width:100%; height:350px;}
 .box2 .slider .ban1 .right{background-image:url(../img/ban1.png); background-repeat:no-repeat; background-size:cover;}
 .box2 .slider .ban2 .right{background-image:url(../img/ban2.png); background-repeat:no-repeat; background-size:cover;}
 .box2 .slider .ban3 .right{background-image:url(../img/ban3.png); background-repeat:no-repeat; background-size:cover;}
