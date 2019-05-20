@@ -120,12 +120,24 @@ function menuScroll(){
 function sideNav(){
     //open side nav
     $(".box1 .ham_icon").on('click', function(){
-        $(".box1 .ham_wrap").animate({"margin-left":"0"});
+        $(".box1 .ham_wrap").animate({"margin-left":"0"},300);
+        $(".box2").css({"display":"none"});
+        $(".box3").css({"display":"none"});
+        $(".box4").css({"display":"none"});
+        $(".box5").css({"display":"none"});
+        $(".box6").css({"display":"none"});
+        $(".box7").css({"display":"none"});
     });
     
     //close side nav
     $(".box1 .ham_wrap .header li:nth-child(2)").on('click',function(){
-        $(".box1 .ham_wrap").animate({"margin-left":"100vw"});
+        $(".box1 .ham_wrap").animate({"margin-left":"100vw"},300);
+        $(".box2").css({"display":"block"});
+        $(".box3").css({"display":"block"});
+        $(".box4").css({"display":"block"});
+        $(".box5").css({"display":"block"});
+        $(".box6").css({"display":"block"});
+        $(".box7").css({"display":"block"});
     });
 }
 
