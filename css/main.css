@@ -160,7 +160,7 @@ img{width: 100%;}
 }
 
 .box3 .academy_session .acd_session .acd_txt .acd_txt_subtitle{
-    font-family: 'metropolis-light metropolis-light-ie';
+    font-family: 'metropolis-light','metropolis-light-ie';
     font-size: 16px;
     letter-spacing: 1.4px;
     margin-bottom: 16px;
