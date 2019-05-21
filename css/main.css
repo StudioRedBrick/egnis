@@ -58,7 +58,7 @@ img{width: 100%;}
 .content p{color:#fff; font-size:19px; line-height:1.88;}/*본문*/
 .clearfix::after {content:""; clear:both; display:block;}
 /*---------------------------------------------------------*/
-/*box0 START*/ /*side nav*/
+/*box0 STARTf*/ /*side nav*/
 .box0{position:absolute; top:0px; right:80px; z-index:9999;}
 .box0 .nav_wrap{width:55px; position:fixed;}
 .box0 .nav_wrap .btn2{margin-top:5px; cursor:pointer;}
@@ -110,7 +110,7 @@ img{width: 100%;}
 }
 
 .box3 .academy_text{
-    font-size: 19px;
+    font-size: 18.7px;
     line-height: 1.88;
     width: 760px;
     margin: 0 auto;
