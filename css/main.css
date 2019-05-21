@@ -423,6 +423,17 @@ img{width: 100%;}
     font-family: 'metropolis-light';
     font-size: 12px;
 }
-
 /*box7 END*/
 /*---------------------------------------------------------*/
+
+/*box 8 start : 개인정보처리방침, 이용약관*/
+.box8{position:absolute; top:0; left:0;}
+.box8 .fixed{width:100vw; height:100vh; background:rgba(0,0,0,1); position:fixed; z-index:9999;}
+.box8 .fixed .modal{width:700px; background:blue; margin:0 auto; position:relative; margin-top:90px; padding:80px 50px 80px 50px;}
+.box8 .fixed .modal p{color:#fff; opacity:0.8; height:500px; overflow-y:scroll; padding-right:30px;}
+.box8 .fixed .modal h3{font-size:40px; line-height:40px; font-family:'markmywords'; letter-spacing:-1.1px; color:#fff; margin-bottom:40px; border-bottom:2px solid #00ff00;}
+.box8 .fixed .modal .close_btn{width:35px; height:35px; position:absolute; top:0; right:-55px; cursor:pointer; background-image:url(../img/icon_close.png); background-repeat:no-repeat; background-size:cover; text-indent:-9999px;}
+
+.box8 .fixed{display:none;}
+.box8 .fixed .modal1{display:none;}
+.box8 .fixed .modal2{display:none;}

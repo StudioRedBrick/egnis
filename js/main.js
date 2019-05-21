@@ -5,6 +5,7 @@ $(document).ready(function(){
     scrollNav();
     menuScroll();
     acaHover();
+    modalBox();
 }); //document ready END 
 
 function faqAco(){
@@ -125,5 +126,36 @@ function acaHover(){
     $(".box3 .academy_session .acd_session").on('mouseleave',function(){
         var target = $(this).find('.acd_txt');
         target.css({"background":"#0600ff"});
+    });
+}
+
+function modalBox(){
+    $(".box7 .footer_wrap .footer_bottom .policy_content .policy1").on('click', function(){
+        $(".box8 .fixed").css({"display":"block"}); 
+        $(".box8 .fixed .modal1").css({"display":"block"}); 
+        
+        //turn off other boxes
+        for(i=0; i<8; i++){
+            $(".box"+i).css({"display":"none"});
+        }
+    });
+    $(".box7 .footer_wrap .footer_bottom .policy_content .policy2").on('click', function(){
+        $(".box8 .fixed").css({"display":"block"}); 
+        $(".box8 .fixed .modal2").css({"display":"block"}); 
+        
+        //turn off other boxes
+        for(i=0; i<8; i++){
+            $(".box"+i).css({"display":"none"});
+        }
+    });
+    
+    $(".box8 .fixed .modal .close_btn").on('click',function(){
+        $(".box8 .fixed").css({"display":"none"}); 
+        $(".box8 .fixed .modal").css({"display":"none"}); 
+        
+        //turn on other boxes
+        for(i=0; i<8; i++){
+            $(".box"+i).css({"display":"block"});
+        }
     });
 }
