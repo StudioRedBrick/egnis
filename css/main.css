@@ -163,7 +163,7 @@ img{width: 100%;}
 }
 
 .box3 .academy_session .acd_session .acd_txt .acd_txt_subtitle{
-    font-family: 'metropolis-light','metropolis-light-ie';
+    font-family: 'metropolis-light','metropolis-regular-ie';
     font-size: 16px;
     letter-spacing: 1.4px;
     margin-bottom: 16px;
@@ -259,7 +259,7 @@ img{width: 100%;}
 }
 
 .box4 .instructor_wrap .instr_slider .instr_wrap .instr_content .instr_subtitle{
-    font-family: 'metropolis-light','metropolis-light-ie';
+    font-family: 'metropolis-light','metropolis-regular-ie';
     font-size: 16px;
     letter-spacing: 2px;
     margin-bottom: 10px;
@@ -273,7 +273,7 @@ img{width: 100%;}
 }
 
 .box4 .instructor_wrap .instr_slider .instr_wrap .instr_content .instr_slogan{
-    font-family: 'metropolis-light','metropolis-light-ie';
+    font-family: 'metropolis-light','metropolis-regular-ie';
     margin-bottom: 10px;
     letter-spacing: 0.5px;
     font-size: 17px;
@@ -375,7 +375,7 @@ img{width: 100%;}
 }
 
 .box7 .txt_en{
-    font-family: 'metropolis-light','metropolis-light-ie';
+    font-family: 'metropolis-light','metropolis-regular-ie';
     letter-spacing: 1px;
     font-size: 12px;
     line-height: 1.4;
@@ -441,7 +441,7 @@ img{width: 100%;}
 }
 
 .box7 .footer_wrap .copy_right p{
-    font-family: 'metropolis-light','metropolis-light-ie';
+    font-family: 'metropolis-light','metropolis-regular-ie';
     font-size: 12px;
 }
 /*box7 END*/
