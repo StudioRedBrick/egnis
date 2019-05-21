@@ -10,19 +10,22 @@ src: url("../font/mark_my_words/mark_my_words.otf") format("opentype"),
 @font-face {
 font-family: 'metropolis';
 src: url("../font/metropolis/Metropolis-Regular.otf") format("embeded-opentype"),
-    url("../font/metropolis/Metropolis-Regular.woff") format("woff");
+    url("../font/metropolis/Metropolis-Regular.woff") format("woff"),
+    url("../font/metropolis/Metropolis-Regular.woff2") format("woff2");
 }
 
 @font-face {
 font-family: 'metropolis-light';
 src: url("../font/metropolis/Metropolis-Light.otf") format("embeded-opentype"),
-    url("../font/metropolis/Metropolis-Light.woff") format("woff");
+    url("../font/metropolis/Metropolis-Light.woff") format("woff"),
+    url("../font/metropolis/Metropolis-Regular.woff2") format("woff2");
 }
 
 @font-face {
 font-family: 'metropolis-bold';
 src: url("../font/metropolis/Metropolis-Bold.otf") format("embeded-opentype"),
-    url("../font/metropolis/Metropolis-Bold.woff") format("woff");
+    url("../font/metropolis/Metropolis-Bold.woff") format("woff"),
+    url("../font/metropolis/Metropolis-Regular.woff2") format("woff2");
 }
 
 @font-face{
