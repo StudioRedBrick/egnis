@@ -29,9 +29,12 @@ function faqAco(){
             if(remain1 == 1){
             //open accordion
                 $(".box6 .aco1 .txt").stop().animate({"height":"105px","opacity":"0.8","transform":"scaleY(100%)"},300);
+                $(".box6 .aco1 p span").css({"background-image":"url(../img/icon_minus.png)"});
+                
             }else{
             //close accordion
                 $(".box6 .aco1 .txt").stop().animate({"height":"0px","opacity":"0","transform":"scaleY(0%)"},300);
+                $(".box6 .aco1 p span").css({"background-image":"url(../img/icon_plus.png)"});
             }
         }else if(i == 2){
             count2++;
@@ -42,9 +45,11 @@ function faqAco(){
             if(remain2 == 1){
             //open accordion
                 $(".box6 .aco2 .txt").stop().animate({"height":"105px","opacity":"0.8","transform":"scaleY(100%)"},300);
+                $(".box6 .aco1 p span").css({"background-image":"url(../img/icon_minus.png)"});
             }else{
             //close accordion
                 $(".box6 .aco2 .txt").stop().animate({"height":"0px","opacity":"0","transform":"scaleY(0%)"},300);
+                $(".box6 .aco1 p span").css({"background-image":"url(../img/icon_plus.png)"});
             }
         }else if(i == 3){
             count3++;
@@ -55,9 +60,11 @@ function faqAco(){
             if(remain3 == 1){
             //open accordion
                 $(".box6 .aco3 .txt").stop().animate({"height":"105px","opacity":"0.8","transform":"scaleY(100%)"},300);
+                $(".box6 .aco1 p span").css({"background-image":"url(../img/icon_minus.png)"});
             }else{
             //close accordion
                 $(".box6 .aco3 .txt").stop().animate({"height":"0px","opacity":"0","transform":"scaleY(0%)"},300);
+                $(".box6 .aco1 p span").css({"background-image":"url(../img/icon_plus.png)"});
             }
         }
         //console.log('remain1= '+remain1+' remain2= '+remain2+' remain3= '+remain3);
