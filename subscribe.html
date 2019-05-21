@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X_UA-compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+    <title>NABBA</title>
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="/img/favicon1.png"/>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.theme.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/subscribe.css">
+    <!--js-->
+    <script type="text/javascript" src="./js/vendor/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/subscribe.js"></script>
+    
+    <!-- detect mobile device -->
+    <!--
+    <script type="text/javascript">
+        var mobileKeyWords = new Array('iPhone','SAMSUNG','BlackBerry','Android','Windows CE','Windows CE;','LG','MOT','SonyEricsson','Symbian','Opera Mobi','Opera Mini','IEmobile');
+        for(var word in mobileKeyWords){
+            if(navigator.userAgent.match(mobileKeyWords[word])!=null){
+                location.href="index_m.html";
+                break;
+            }
+        }
+    </script>
+    -->
+</head>
+
+<body>
+    <div class="login_wrap">
+        <div class="pos_fix">
+            <div class="modal_wrap">
+                <div class="title">
+                    <h3>LOGIN</h3>
+                    <div class="line">line</div>
+                </div>
+                
+                <form>
+                    <p>ID</p>
+                    <input type="text" name="ID">
+                    <br>
+                    <p class="margin-top">PW</p>
+                    <input type="text" name="PW">
+                    <input class="enter" type="button" name="enter" value="ENTER">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="list_wrap">
+        <div class="firstwrap">
+            <h3>SUBSCRIBER LIST</h3>
+            <ul>
+                <!--메일 주소 가져올때 뒤에 , 하나씩 붙여서 넣어주세요-->
+                <li><p>11guestemail@gmail.com,</p><input type="checkbox"></li>
+                <li><p>22guestemail@gmail.com,</p><input type="checkbox"></li>
+                <li><p>33guestemail@gmail.com,</p><input type="checkbox"></li>
+                <li><p>44guestemail@gmail.com,</p><input type="checkbox"></li>
+                <li><p>55guestemail@gmail.com,</p><input type="checkbox"></li>
+                <li><p>66guestemail@gmail.com,</p><input type="checkbox"></li>
+                <li><p>77guestemail@gmail.com,</p><input type="checkbox"></li>
+                <li><p>88guestemail@gmail.com,</p><input type="checkbox"></li>
+                <li><p>99guestemail@gmail.com,</p><input type="checkbox"></li>
+                <li><p>1010guestemail@gmail.com,</p><input type="checkbox"></li>
+            </ul>
+            <input class="buttons delete_btn" type="button" value="DELETE" name="delete">
+        </div>
+        <div class="secwrap clearfix">
+            <h3>GET All LIST</h3>
+            <textarea readonly name="textbox" class="txtbox"></textarea>
+            <input class="buttons floating getlist" type="button" name="listup" value="GET LIST">
+            <input class="buttons floating clearlist" type="button" name="clearlist" value="CLEAR">
+        </div>
+    </div>
+    
+    <div class="alert_wrap">
+        <div class="blanket">
+            <div class="alert">
+                <p>삭제하시겠습니까?</p>
+                <ul class="clearfix">
+                    <li>YES</li>
+                    <li>NO</li>
+                </ul>
+            </div>    
+        </div>
+    </div>
+    
+    
+</body>
+</html>

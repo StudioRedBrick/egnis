@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@font-face {
+font-family: 'markmywords';
+src: url("../font/mark_my_words/mark_my_words.otf") format("opentype"),
+    url("../font/mark_my_words/mark_my_words.ttf") format("truetype");
+}
+
+@font-face {
+font-family: 'metropolis';
+src: url("../font/metropolis/Metropolis-Regular.otf") format("embeded-opentype"),
+    url("../font/metropolis/Metropolis-Regular.woff") format("woff"),
+    url("../font/metropolis/Metropolis-Regular.woff2") format("woff2");
+}
+
+@font-face {
+font-family: 'metropolis-light';
+src: url("../font/metropolis/Metropolis-Light.otf") format("embeded-opentype"),
+    url("../font/metropolis/Metropolis-Light.woff") format("woff"),
+    url("../font/metropolis/Metropolis-Regular.woff2") format("woff2");
+}
+
+@font-face {
+font-family: 'metropolis-bold';
+src: url("../font/metropolis/Metropolis-Bold.otf") format("embeded-opentype"),
+    url("../font/metropolis/Metropolis-Bold.woff") format("woff"),
+    url("../font/metropolis/Metropolis-Regular.woff2") format("woff2");
+}
+
+@font-face{
+font-family : 'metropolis-ie';
+src: url("../font/metropolis/Metropolis-Regular.eot?") format("eot");
+}
+
+@font-face{
+font-family : 'metropolis-light-ie';
+src: url("../font/metropolis/Metropolis-Light.eot?") format("eot");
+}
+
+@font-face{
+font-family : 'metropolis-bold-ie';
+src: url("../font/metropolis/Metropolis-Bold.eot?") format("eot");
+}
+
+/*reset*/
+*{margin:0; padding:0; font-family: 'Noto Sans KR', sans-serif; hyphens:none; word-break:keep-all;}
+html{overflow-x:hidden;}
+body{margin:0; padding:0; position:relative; background:blue;}
+a{text-decoration:none; color:rgba(0,0,0,1);}
+ul, li{list-style:none;}
+p, span, h1, h2, h3{margin:0; padding:0;}
+img{width: 100%;}
+/*reset end*/
+/*---------------------------------------------------------*/
+.pos_fix{position:fixed;}
+.clearfix::after {content:""; clear:both; display:block;}
+/*---------------------------------------------------------*/
+/*login modal*/
+.login_wrap{position:absolute; top:0; left:0; display:none; z-index:9999;}
+.login_wrap .pos_fix{width:100%; height:100vh; background:blue; position:fixed;}
+.login_wrap .pos_fix .modal_wrap{width:500px; height:460px; margin:0 auto; padding:50px 50px 0 50px; background:#fff; position:relative;}
+.login_wrap .pos_fix .modal_wrap .title{position:relative; width:100%; height:100px;}
+.login_wrap .pos_fix .modal_wrap .title h3{width:140px; font-size:50px; font-family:'markmywords'; line-height:50px; text-align:center; color:blue; position:absolute; left:50%; top:0; margin-left:-70px; z-index:2;}
+.login_wrap .pos_fix .modal_wrap .title .line{width:140px; height:30px; background:#00ff00; position:absolute; left:50%; top:2px; margin-left:-70px; text-indent:-9999px;}
+
+/*form*/
+.login_wrap .pos_fix .modal_wrap form{width:87.5%; margin:0 auto;}
+.login_wrap .pos_fix .modal_wrap form p{width:100%; text-align:center; font-size:22px; color:#124399; font-family:'metropolis','metropolis-ie'; padding-bottom:4px;}
+.login_wrap .pos_fix .modal_wrap form p.margin-top{margin-top:20px;}
+.login_wrap .pos_fix .modal_wrap form input{width:100%; outline:none;}
+.login_wrap .pos_fix .modal_wrap form input.enter{display:block; width:40%; background:#ffffff; margin:60px auto 0 auto; font-size:20px; line-height:20px; color:rgba(0,0,0,1); font-family:'metropolis','metropolis-ie'; padding: 20px 20px; cursor:pointer; border:3px solid #000;}
+.login_wrap .pos_fix .modal_wrap form input.enter:hover{background:#00ff00;}
+input[type="text"]{font-size:20px; line-height:20px; color:rgba(18,67,153,0.9); font-family:'metropolis','metropolis-ie'; padding:10px 5px; border:3px solid #0000ff;}
+
+/*---------------------------------------------------------*/
+
+/*subscriber list*/
+.list_wrap{width:1000px; margin:0 auto; background:#fff; padding:70px; box-sizing:border-box; -webkit-box-sizing:border-box;}
+.list_wrap h3{font-size:36px; line-height:36px; font-family:'montserrat'; padding-bottom:20px; color:#124399;}
+.list_wrap ul li{width:100; padding:14px 0; border-bottom:1px solid rgba(18,67,153,0.6); position:relative;}
+.list_wrap ul li input[type="checkbox"]{position:absolute; top:20px; right:10px; transform:scale(1.2);}
+.list_wrap input.buttons{display:block; font-size:16px; padding:10px 40px; background:#ffffff; font-family:'metropolis','metropolis-ie'; border:1.5px solid rgba(18,67,153,1); color:#124399; cursor:pointer; margin-top:28px; outline:none;}
+.list_wrap input.buttons:hover{background:#00ff00;}
+
+.list_wrap .secwrap{margin-top:100px;}
+.list_wrap .secwrap textarea{width:100%; height:400px; border:1px solid rgba(18,67,153,0.6); resize:none; font-size:18px; outline:none;}
+.list_wrap .secwrap textarea:focus{outline:none;}
+
+.list_wrap .secwrap input.floating{float:left;}
+.list_wrap .secwrap input.clearlist{margin-left:12px;}
+
+/*---------------------------------------------------------*/
+
+/*alert*/
+.alert_wrap{position:absolute; top:0; left:0; display:none;}
+.alert_wrap .blanket{width:100%; height:100vh; background:rgba(0,0,0,0.5); position:fixed;}
+.alert_wrap .blanket .alert{width:500px; height:190px; background:blue; margin:0 auto; padding:50px 50px 0 50px;}
+.alert_wrap .blanket .alert p{font-size:30px; font-weight:600; text-align:center; padding-bottom:30px;}
+.alert_wrap .blanket .alert ul li{width:49%; padding:15px; box-sizing:border-box; -webkit-box-sizing:border-box; background:#ffffff; border:2px solid #000; text-align:center; font-size:20px; float:left; cursor:pointer; font-family:'montserrat-bold','montserrat-ie';}
+.alert_wrap .blanket .alert ul li:hover{background:#00ff00;}
+.alert_wrap .blanket .alert ul li:nth-child(2){float:right;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
