@@ -10,22 +10,34 @@ src: url("../font/mark_my_words/mark_my_words.otf") format("opentype"),
 @font-face {
 font-family: 'metropolis';
 src: url("../font/metropolis/Metropolis-Regular.otf") format("opentype"),
-    url("../font/metropolis/Metropolis-Regular.woff") format("woff"),
-    url("../font/metropolis/Metropolis-Regular.eot?") format("eot");
+    url("../font/metropolis/Metropolis-Regular.woff") format("woff");
 }
 
 @font-face {
 font-family: 'metropolis-light';
 src: url("../font/metropolis/Metropolis-Light.otf") format("opentype"),
-    url("../font/metropolis/Metropolis-Light.woff") format("woff"),
-    url("../font/metropolis/Metropolis-Light.eot?") format("eot");
+    url("../font/metropolis/Metropolis-Light.woff") format("woff");
 }
 
 @font-face {
 font-family: 'metropolis-bold';
 src: url("../font/metropolis/Metropolis-Bold.otf") format("opentype"),
-    url("../font/metropolis/Metropolis-Bold.woff") format("woff"),
-    url("../font/metropolis/Metropolis-Bold.eot?") format("eot");
+    url("../font/metropolis/Metropolis-Bold.woff") format("woff");
+}
+
+@font-face{
+font-family : 'metropolis-ie';
+src: url("../font/metropolis/Metropolis-Regular.eot?") format("eot");
+}
+
+@font-face{
+font-family : 'metropolis-light-ie';
+src: url("../font/metropolis/Metropolis-Light.eot?") format("eot");
+}
+
+@font-face{
+font-family : 'metropolis-bold-ie';
+src: url("../font/metropolis/Metropolis-Bold.eot?") format("eot");
 }
 
 /*reset*/
@@ -148,7 +160,7 @@ img{width: 100%;}
 }
 
 .box3 .academy_session .acd_session .acd_txt .acd_txt_subtitle{
-    font-family: 'metropolis-light';
+    font-family: 'metropolis-light','metropolis-light-ie';
     font-size: 16px;
     letter-spacing: 1.4px;
     margin-bottom: 16px;
@@ -244,7 +256,7 @@ img{width: 100%;}
 }
 
 .box4 .instructor_wrap .instr_slider .instr_wrap .instr_content .instr_subtitle{
-    font-family: 'metropolis-light';
+    font-family: 'metropolis-light','metropolis-light-ie';
     font-size: 16px;
     letter-spacing: 2px;
     margin-bottom: 10px;
@@ -258,7 +270,7 @@ img{width: 100%;}
 }
 
 .box4 .instructor_wrap .instr_slider .instr_wrap .instr_content .instr_slogan{
-    font-family: 'metropolis-light';
+    font-family: 'metropolis-light','metropolis-light-ie';
     margin-bottom: 10px;
     letter-spacing: 0.5px;
     font-size: 17px;
@@ -297,7 +309,7 @@ img{width: 100%;}
 .box5 .title{width:400px; margin:0 auto; font-size:80px; line-height:90px; color:#fff; text-align:center; font-family:'markmywords'; border-bottom:26px solid #00ff00; padding-top:150px; margin-bottom:70px;}
 .box5 .poster{width:800px; margin:0 auto;}
 .box5 .sub_title{width:800px; margin:0 auto;}
-.box5 .sub_title p{font-family:'metropolis'; letter-spacing:5px; font-size:25px; color:#fff; padding:70px 0 10px 0;}
+.box5 .sub_title p{font-family:'metropolis','metropolis-ie'; letter-spacing:5px; font-size:25px; color:#fff; padding:70px 0 10px 0;}
 .box5 .sub_title h3{font-size:42px; line-height:52px; color:#fff; font-weight:bold; padding-bottom:55px; border-bottom:2px solid #00ff00;}
 .box5 .content{width:800px; margin:70px auto 0 auto;}
 .box5 .content .txt{opacity:0.8;}
@@ -360,7 +372,7 @@ img{width: 100%;}
 }
 
 .box7 .txt_en{
-    font-family: 'metropolis-light';
+    font-family: 'metropolis-light','metropolis-light-ie';
     letter-spacing: 1px;
     font-size: 12px;
     line-height: 1.4;
@@ -400,7 +412,7 @@ img{width: 100%;}
 }
 
 .box7 .footer_wrap .footer_social .social_content div p{
-    font-family: 'metropolis-bold';
+    font-family: 'metropolis-bold','metropolis-bold-ie';
     font-size: 15px;
     line-height: 1.4;
     margin-bottom: 8px;
@@ -426,7 +438,7 @@ img{width: 100%;}
 }
 
 .box7 .footer_wrap .copy_right p{
-    font-family: 'metropolis-light';
+    font-family: 'metropolis-light','metropolis-light-ie';
     font-size: 12px;
 }
 /*box7 END*/
