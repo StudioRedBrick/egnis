@@ -460,3 +460,13 @@ img{width: 100%;}
 .box8 .fixed{display:none;}
 .box8 .fixed .modal1{display:none;}
 .box8 .fixed .modal2{display:none;}
+
+/*mediaquery*/
+/*detail media query*/
+@media screen and (max-width:1024px){
+    /*logo*/
+    .box1 .logo{left:40px;}
+    /*header*/
+    .box1 .menu{padding-right:40px;}
+    .box1 .menu li{font-size:17px; margin-left:40px;}
+}

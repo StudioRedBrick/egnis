@@ -73,6 +73,7 @@ function faqAco(){
 
 function bxSlider(){
     $('.slider').bxSlider({
+        mode:'vertical',
         auto:true,
         pause:3000,
         speed:500,
