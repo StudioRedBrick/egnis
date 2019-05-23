@@ -4,7 +4,7 @@ $(document).ready(function(){
     faqAco();
     scrollNav();
     menuScroll();
-    acaHover();
+    //acaHover();
     modalBox();
 }); //document ready END 
 
@@ -86,7 +86,7 @@ function instructor(){
         slidesToScroll: 1,
         dots: true,
         arrows: false,
-//        autoplay: true,
+        autoplay: true,
         autoplaySpeed: 4000
     });
 }
