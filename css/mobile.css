@@ -86,7 +86,7 @@ img{width: 100%;}
 .box1 .m_header .ham_icon{width:20px; position:absolute; right:30px; top:25px; cursor:pointer;}
 
 .box1 .ham_wrap{width:100vw; z-index:9998; background:blue; margin-left:100vw;}
-.box1 .ham_wrap .inner_scroll{width:100%; height:100vh; overflow-y:scroll;}
+.box1 .ham_wrap .inner_scroll{width:100%; height:100vh; overflow-y:scroll; scroll-behavior:smooth;}
 .box1 .ham_wrap .inner_scroll::-webkit-scrollbar{width:0;}
 .box1 .ham_wrap .inner_scroll::-webkit-scrollbar-track-piece{background-color: transparent; -webkit-border-radius: 6px;}
 
