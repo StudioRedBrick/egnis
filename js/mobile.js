@@ -154,7 +154,5 @@ function footeraco(){
         $(this).toggleClass("active",700);
         var acopanel = $(this).parent().find(".aco_panel");
         acopanel.slideToggle(700, function(){});
-        
     });
-
 }
