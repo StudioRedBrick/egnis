@@ -97,6 +97,17 @@ img{width: 100%;}
 .box2 .slider .ban4 .right{background-image:url(../img/ban4.png); background-repeat:no-repeat; background-size:cover;}
 .box2 .slider .ban5 .right{background-image:url(../img/ban5.png); background-repeat:no-repeat; background-size:cover;}
 
+/*mediaquery*/
+@media screen and (min-width:1600px){
+    .box2 .slider li{height:750px;}
+    .box2 .slider li .left{height:750px;}
+    .box2 .slider .bans .right{height:750px;}
+    
+    /*left slogan*/
+    .box2 .slider li .left1 img{top:225px;}
+    .box2 .slider li .left2 img{top:320px;}
+    .box2 .slider li .left3 img{top:180px;}
+}
 /*box2 END*/
 /*---------------------------------------------------------*/
 /*box3 START*/ /*yeeun*/
@@ -469,4 +480,12 @@ img{width: 100%;}
     /*header*/
     .box1 .menu{padding-right:40px;}
     .box1 .menu li{font-size:17px; margin-left:40px;}
+}
+@media screen and (max-width:780px){
+    .box1{height:105px;}
+    /*logo*/
+    .box1 .logo{width:120px; left:35px;}
+    /*header*/
+    .box1 .menu{padding-right:35px; padding-top:43px;}
+    .box1 .menu li{font-size:16px; margin-left:35px;}
 }

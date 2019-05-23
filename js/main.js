@@ -75,7 +75,7 @@ function faqAco(){
 function bxSlider(){
     $('.slider').bxSlider({
         auto:true,
-        pause:3000,
+        pause:30000,
         speed:700,
         touchEnabled:true
     });
