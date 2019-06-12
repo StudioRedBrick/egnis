@@ -1,12 +1,12 @@
 package main
 
 import (
-	"gopkg.in/go-playground/webhooks.v5/github"
-	"github.com/labstack/echo"
 	"fmt"
+	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
-	"os/exec"
+	"gopkg.in/go-playground/webhooks.v5/github"
 	"net/http"
+	"os/exec"
 )
 
 const (
@@ -45,7 +45,7 @@ func main() {
 	})
 
 	e.GET("/hello", func(e echo.Context) error {
-		return e.JSON(http.StatusOK,"world")
+		return e.JSON(http.StatusOK, "world")
 	})
 
 	e.Logger.Fatal(e.Start(":3000"))
