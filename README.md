@@ -36,23 +36,24 @@ http {
     include /etc/nginx/conf.d/*.conf;
 
     server {
-        listen       80 default_server;
-        listen       [::]:80 default_server;
-        server_name  _;
-        root         /usr/share/nginx/html/denmoville;
+        listen       80;
+        return         301 https://$server_name$request_uri;
+
+        server_name  nabbatrainingbase.co.kr nabbatrainingbase.com;
+        root         /usr/share/nginx/html/egnis;
 
         # Load configuration files for the default server block.
         include /etc/nginx/default.d/*.conf;
 
         location / {
         }
+
         location /hello {
             proxy_pass http://127.0.0.1:3000/hello;
         }
         location /webhooks {
             proxy_pass http://127.0.0.1:3000/webhooks;
         }
-
 
         error_page 404 /404.html;
             location = /40x.html {
@@ -62,6 +63,43 @@ http {
             location = /50x.html {
         }
     }
+
+# Settings for a TLS enabled server.
+#
+    server {
+        listen       443 ssl http2 default_server;
+        listen       [::]:443 ssl http2 default_server;
+        server_name  nabbatrainingbase.co.kr nabbatrainingbase.com;
+        root         /usr/share/nginx/html/egnis;
+        ssl_certificate /etc/letsencrypt/live/nabbatrainingbase.co.kr/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/nabbatrainingbase.co.kr/privkey.pem;
+        ssl_session_cache shared:SSL:1m;
+        ssl_session_timeout  10m;
+        ssl_ciphers HIGH:!aNULL:!MD5;
+        ssl_prefer_server_ciphers on;
+
+        # Load configuration files for the default server block.
+        include /etc/nginx/default.d/*.conf;
+        location / {
+        }
+
+        location /hello {
+            proxy_pass http://127.0.0.1:3000/hello;
+        }
+        location /webhooks {
+            proxy_pass http://127.0.0.1:3000/webhooks;
+        }
+
+        error_page 404 /404.html;
+            location = /40x.html {
+        }
+
+        error_page 500 502 503 504 /50x.html;
+            location = /50x.html {
+        }
+
+    }
+
 }
 ```
 
