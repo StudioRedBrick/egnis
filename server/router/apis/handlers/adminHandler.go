@@ -13,7 +13,7 @@ type Admin struct {
 	Password string
 }
 
-func Login(c echo.Context) error {
+func (db *DBHandler) Login(c echo.Context) error {
 	var admin Admin
 
 	if admin := c.Bind(&admin); admin != nil {

@@ -16,9 +16,15 @@
     <link rel="stylesheet" type="text/css" href="./css/jquery-ui.theme.min.css">
     <link rel="stylesheet" type="text/css" href="./css/subscribe.css">
     <!--js-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+
     <script type="text/javascript" src="./js/vendor/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/vendor/jquery-ui.min.js"></script>
     <script type="text/javascript" src="./js/subscribe.js"></script>
+
+
+
     
     <!-- detect mobile device -->
     <!--
@@ -35,6 +41,7 @@
 </head>
 
 <body>
+<main id="app">
     <div class="login_wrap">
         <div class="pos_fix">
             <div class="modal_wrap">
@@ -55,31 +62,7 @@
         </div>
     </div>
     
-    <div class="list_wrap">
-        <div class="firstwrap">
-            <h3>SUBSCRIBER LIST</h3>
-            <ul>
-                <!--메일 주소 가져올때 뒤에 , 하나씩 붙여서 넣어주세요-->
-                <li><p>11guestemail@gmail.com,</p><input type="checkbox"></li>
-                <li><p>22guestemail@gmail.com,</p><input type="checkbox"></li>
-                <li><p>33guestemail@gmail.com,</p><input type="checkbox"></li>
-                <li><p>44guestemail@gmail.com,</p><input type="checkbox"></li>
-                <li><p>55guestemail@gmail.com,</p><input type="checkbox"></li>
-                <li><p>66guestemail@gmail.com,</p><input type="checkbox"></li>
-                <li><p>77guestemail@gmail.com,</p><input type="checkbox"></li>
-                <li><p>88guestemail@gmail.com,</p><input type="checkbox"></li>
-                <li><p>99guestemail@gmail.com,</p><input type="checkbox"></li>
-                <li><p>1010guestemail@gmail.com,</p><input type="checkbox"></li>
-            </ul>
-            <input class="buttons delete_btn" type="button" value="DELETE" name="delete">
-        </div>
-        <div class="secwrap clearfix">
-            <h3>GET All LIST</h3>
-            <textarea readonly name="textbox" class="txtbox"></textarea>
-            <input class="buttons floating getlist" type="button" name="listup" value="GET LIST">
-            <input class="buttons floating clearlist" type="button" name="clearlist" value="CLEAR">
-        </div>
-    </div>
+    <subs-list></subs-list>
     
     <div class="alert_wrap">
         <div class="blanket">
@@ -93,6 +76,8 @@
         </div>
     </div>
     
-    
+</main>
+<script src="./js/vuejs/subs-list.js"></script>
+<script src="./js/vuejs/main.js"></script>
 </body>
 </html>

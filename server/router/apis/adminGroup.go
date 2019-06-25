@@ -5,6 +5,6 @@ import (
 	"github.com/labstack/echo"
 )
 
-func BindAdminGroup(e *echo.Group) {
-	e.POST("/login", handlers.Login)
+func BindAdminGroup(e *echo.Group, dbHandler *handlers.DBHandler) {
+	e.POST("/login", dbHandler.Login)
 }
