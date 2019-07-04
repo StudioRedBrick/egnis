@@ -6,7 +6,10 @@ import (
 	"github.com/egnis/server/router/config"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
+	"github.com/labstack/gommon/log"
 	"net/http"
+	"os"
+	"strings"
 )
 
 func New() *echo.Echo {
@@ -23,6 +26,7 @@ func New() *echo.Echo {
 
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
+	e.Use(middleware.Static(getFrontWorkingDirectory()))
 
 	healthGroup := e.Group("/health")
 	adminGroup := e.Group("/admin")
@@ -33,4 +37,13 @@ func New() *echo.Echo {
 	apis.BindSubscribeGroup(subsGroup, dbHandler)
 
 	return e
+}
+
+func getFrontWorkingDirectory() string {
+	dir, err := os.Getwd()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	return strings.SplitAfter(dir, "github.com")[0] + "/egnis"
 }

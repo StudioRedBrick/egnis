@@ -77,14 +77,14 @@ func (db *DBHandler) FindAllSubs(c echo.Context) error {
 }
 
 func (db *DBHandler) DeleteSubs(c echo.Context) error {
-	var willDeleteSubscribers []Subscriber
+	var willDeleteSubscribers []string
 
 	if err := c.Bind(&willDeleteSubscribers); err != nil {
 		return echo.ErrBadRequest
 	}
 
 	for _, value := range willDeleteSubscribers {
-		db.db.Model(&Subscriber{}).Where("email = ? and is_deleted = false", value.Email).Update(map[string]interface{}{"is_deleted": true, "deleted": time.Now()})
+		db.db.Model(&Subscriber{}).Where("Id = ? and is_deleted = false", value).Update(map[string]interface{}{"is_deleted": true, "deleted": time.Now()})
 	}
 	return c.JSON(http.StatusOK, "2222")
 }

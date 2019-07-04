@@ -7,6 +7,6 @@ import (
 
 func BindSubscribeGroup(e *echo.Group, dbHandler *handlers.DBHandler) {
 	e.POST("/new-subs", dbHandler.NewSubs)
-	e.PUT("/remove-subs", dbHandler.DeleteSubs)
+	e.POST("/remove-subs", dbHandler.DeleteSubs)
 	e.GET("/all", dbHandler.FindAllSubs)
 }

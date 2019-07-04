@@ -22,20 +22,18 @@ Vue.component("subs-list", {
         }
     },
     created: function() {
-        console.log("ffffffff");
         $.ajax({
             type: "get",
-            url: "http://localhost:3001/subscriber/all",
+            url: "/subscriber/all",
             dataType:"json",
             success: function(result) {
                 this.subsList = result["subs-list"];
-                console.log("subsList : ", this.subsList)
+                console.log("Completed loading the Subscriber List. ");
             }.bind(this)
         });
     },
     methods: {
         deleteSubs() {
         }
-
     }
 });

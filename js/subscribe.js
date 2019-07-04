@@ -41,8 +41,43 @@ function delCheckbox(){
     
     //if yes clicked
     $(".alert_wrap .blanket .alert ul li:nth-child(1)").on('click',function(){
-        $(".list_wrap .firstwrap ul li input:checked").parent().remove();
-        $(".alert_wrap").css({"display":"none"});
+
+        let aelSubsIds = document.querySelectorAll("._subsId");
+        // index는 0부터 시작해서, lenth - 1해줌.
+        const nSubsIdCount = aelSubsIds.length - 1;
+
+        let aDeleteSubs = [];
+
+        aelSubsIds.forEach( (value,index) => {
+            if (value.checked) {
+                aDeleteSubs.push(value.value);
+            }
+
+            if (index == nSubsIdCount) {
+                $.ajax({
+                    type: "post",
+                    url: "/subscriber/remove-subs",
+                    dataType: "json",
+                    contentType: "application/json; charset=UTF-8",
+                    data: JSON.stringify(aDeleteSubs),
+                    success: function (result) {
+                        if( result !== "2222") {
+                            alert("에러발생! 개발자에게 문의해주세요 :) error code : ", result);
+                            return;
+                        }
+                        console.log("Completed deleting the selected Subscribers list.");
+                        $(".list_wrap .firstwrap ul li input:checked").parent().remove();
+                        $(".alert_wrap").css({"display":"none"});
+                    },
+                    error: function (result) {
+                        alert("에러발생! 개발자에게 문의해주세요 :) ");
+                    }
+                })
+            }
+        });
+
+
+
     });
     
     //if no clicked
@@ -58,6 +93,7 @@ function getList(){
         var content = $(".list_wrap .firstwrap ul li p").text();
         //console.log('content= '+content);
         var value = content.substring(0,content.length-1);
+        $(".list_wrap .secwrap textarea").empty();
         $(".list_wrap .secwrap textarea").append(value);
     });
 }

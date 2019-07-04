@@ -8,6 +8,6 @@ new Vue({
         }
     },
     created : function() {
-        console.log("asdf");
+        console.log("Vue component created");
     }
 })
