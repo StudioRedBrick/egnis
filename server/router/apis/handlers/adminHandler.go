@@ -38,7 +38,7 @@ func (db *DBHandler) Login(c echo.Context) error {
 	c.SetCookie(jwtCookie)
 
 	return c.JSON(http.StatusOK, map[string]string{
-		"message": "success",
+		"message": "2222",
 		"token":   token,
 		"email":   admin.Email,
 	})

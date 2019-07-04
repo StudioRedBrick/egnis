@@ -62,7 +62,7 @@ function delCheckbox(){
                     data: JSON.stringify(aDeleteSubs),
                     success: function (result) {
                         if( result !== "2222") {
-                            alert("에러발생! 개발자에게 문의해주세요 :) error code : ", result);
+                            alert("비 정상적인 접근입니다.");
                             return;
                         }
                         console.log("Completed deleting the selected Subscribers list.");
@@ -70,14 +70,11 @@ function delCheckbox(){
                         $(".alert_wrap").css({"display":"none"});
                     },
                     error: function (result) {
-                        alert("에러발생! 개발자에게 문의해주세요 :) ");
+                        alert("비 정상적인 접근입니다.");
                     }
                 })
             }
         });
-
-
-
     });
     
     //if no clicked
@@ -105,31 +102,3 @@ function clearTxt(){
         var content = $(".list_wrap .secwrap textarea").empty();
     });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

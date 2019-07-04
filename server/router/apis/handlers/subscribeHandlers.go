@@ -41,8 +41,11 @@ func (db *DBHandler) NewSubs(c echo.Context) error {
 	if alrSubs.Email == subs.Email {
 		return c.JSON(http.StatusOK, "3000")
 	}
+	subs.CreateAt = time.Now()
+	subs.Deleted = subs.CreateAt
+	subs.IsDeleted = false
 
-	db.db.Save(subs)
+	db.db.Save(&subs)
 
 	return c.JSON(http.StatusOK, "2222")
 }

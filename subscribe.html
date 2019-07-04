@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="./css/subscribe.css">
     <!--js-->
 
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
 
     <script type="text/javascript" src="./js/vendor/jquery-3.3.1.min.js"></script>
@@ -42,28 +43,11 @@
 
 <body>
 <main id="app">
-    <div class="login_wrap">
-        <div class="pos_fix">
-            <div class="modal_wrap">
-                <div class="title">
-                    <h3>LOGIN</h3>
-                    <div class="line">line</div>
-                </div>
-                
-                <form>
-                    <p>ID</p>
-                    <input type="text" name="ID">
-                    <br>
-                    <p class="margin-top">PW</p>
-                    <input type="text" name="PW">
-                    <input class="enter" type="button" name="enter" value="ENTER">
-                </form>
-            </div>
-        </div>
-    </div>
-    
-    <subs-list></subs-list>
-    
+
+
+    <login-view v-if="!isLoggedIn" @login-success="doLogin"></login-view>
+    <subs-list v-else></subs-list>
+
     <div class="alert_wrap">
         <div class="blanket">
             <div class="alert">
@@ -72,12 +56,13 @@
                     <li id="deleteYes">YES</li>
                     <li>NO</li>
                 </ul>
-            </div>    
+            </div>
         </div>
     </div>
     
 </main>
 <script src="./js/vuejs/subs-list.js"></script>
+<script src="./js/vuejs/login-view.js"></script>
 <script src="./js/vuejs/main.js"></script>
 </body>
 </html>

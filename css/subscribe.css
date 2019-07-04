@@ -57,7 +57,7 @@ img{width: 100%;}
 .clearfix::after {content:""; clear:both; display:block;}
 /*---------------------------------------------------------*/
 /*login modal*/
-.login_wrap{position:absolute; top:0; left:0; display:none; z-index:9999;}
+.login_wrap{position:absolute; top:0; left:0; z-index:9999;}
 .login_wrap .pos_fix{width:100%; height:100vh; background:blue; position:fixed;}
 .login_wrap .pos_fix .modal_wrap{width:500px; height:460px; margin:0 auto; padding:50px 50px 0 50px; background:#fff; position:relative;}
 .login_wrap .pos_fix .modal_wrap .title{position:relative; width:100%; height:100px;}
